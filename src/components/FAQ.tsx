@@ -88,7 +88,7 @@ export default function FAQSection() {
               </span>
             </button>
             {openIndex === index && (
-              <div className="space-mono-regular-italic px-6 py-5 text-md text-gray-700 bg-white rounded-b-lg shadow-lg">
+              <div className="space-mono-regular-italic px-6 text-md text-gray-700 bg-white rounded-b-lg shadow-lg">
                 {faq.answer}
                 {/* render optional links */}
                 {faq.question ===
