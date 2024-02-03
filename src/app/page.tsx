@@ -3,7 +3,7 @@
 
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
-import { Welcome, Speakers } from "@/components";
+import { Welcome, Speakers, Agenda } from "@/components";
 import { createWidget } from "@typeform/embed";
 
 export default function Home() {
@@ -18,30 +18,6 @@ export default function Home() {
     "connect with industry experts",
     "get insights on web3 developer jobs",
     "build your blockchain portfolio",
-  ];
-
-  //  list of speakers
-  const speakers = [
-    {
-      imageSrc: "placeholderPerson.jpg",
-      name: "Name",
-      title: "Role",
-    },
-    {
-      imageSrc: "placeholderPerson.jpg",
-      name: "Name",
-      title: "Role",
-    },
-    {
-      imageSrc: "placeholderPerson.jpg",
-      name: "Name",
-      title: "Role",
-    },
-    {
-      imageSrc: "placeholderPerson.jpg",
-      name: "Name",
-      title: "Role",
-    },
   ];
 
   useEffect(() => {
@@ -75,6 +51,22 @@ export default function Home() {
       clearInterval(typewriterInterval); // Clear the interval on unmount or when the component re-renders
     };
   }, [typewriterIndex]);
+
+  useEffect(() => {
+    const dividerContent =
+      "Smart Contracts • Ethereum • Consensus • Decentralized • Ledger • Cryptography • Tokenization • Web3 • DApps • NFT • Mining • Staking • DAO • DeFi • IPFS • Oracles • Interoperability • Scaling • Layer 2 • Gas • Fork • 51% Attack • Solidity • ERC-20 • ERC-721 • EVM • zk-SNARKs • zk-STARKs • Rollups";
+    const contentArray = dividerContent.split(" • ");
+    contentArray.sort(() => 0.5 - Math.random());
+    const randomizedContent = contentArray.join(" • ");
+
+    // Select all .section-divider elements
+    const sectionDividers = document.querySelectorAll(".section-divider");
+
+    // Iterate through each .section-divider element and set its data-content attribute
+    sectionDividers.forEach((divider) => {
+      divider.setAttribute("data-content", randomizedContent);
+    });
+  }, []);
 
   const handleRegisterClick = () => {
     setIsActive(true); // Activate the button's animation
@@ -143,10 +135,12 @@ export default function Home() {
             />
           </div>
         </div>
-        <div className="section-divider w-full"></div>
+        <div className="section-divider" w-full></div>
         <Welcome />
-        <div className="section-divider w-full"></div>
-        <Speakers speakers={speakers} />
+        <div className="section-divider" w-full></div>
+        <Speakers />
+        <div className="section-divider" w-full></div>
+        <Agenda />
       </div>
     </main>
   );

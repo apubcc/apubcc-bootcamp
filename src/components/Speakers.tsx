@@ -1,9 +1,35 @@
+"use client";
+
 // Define a type for the speaker data
 type Speaker = {
   imageSrc: string;
   name: string;
   title: string;
 };
+
+//  list of speakers
+const speakers = [
+  {
+    imageSrc: "placeholderPerson.jpg",
+    name: "Name",
+    title: "Role",
+  },
+  {
+    imageSrc: "placeholderPerson.jpg",
+    name: "Name",
+    title: "Role",
+  },
+  {
+    imageSrc: "placeholderPerson.jpg",
+    name: "Name",
+    title: "Role",
+  },
+  {
+    imageSrc: "placeholderPerson.jpg",
+    name: "Name",
+    title: "Role",
+  },
+];
 
 // SpeakerCard.tsx
 const SpeakerCard = ({
@@ -33,7 +59,7 @@ const SpeakerCard = ({
 };
 
 // Speakers.tsx
-const Speakers = ({ speakers }: { speakers: Speaker[] }) => {
+export default function Speakers() {
   return (
     <div className="container mx-auto">
       <h2 className="text-lg md:text-2xl font-bold mb-3 space-mono-bold">
@@ -55,6 +81,4 @@ const Speakers = ({ speakers }: { speakers: Speaker[] }) => {
       </div>
     </div>
   );
-};
-
-export default Speakers;
+}

@@ -164,7 +164,7 @@ body {
 }
 
 .section-divider::before {
-  content: "Smart Contracts • Ethereum • Consensus • Decentralized • Ledger • Cryptography • Tokenization • Web3 • DApps • NFT • Mining • Staking • DAO • DeFi • IPFS • Oracles • Interoperability • Scaling • Layer 2 • Gas • Fork • 51% Attack • Solidity • ERC-20 • ERC-721 • EVM • zk-SNARKs • zk-STARKs • Rollups";
+  content: attr(data-content);
   display: inline-block;
   text-align: center;
   font-size: 0.75rem;
