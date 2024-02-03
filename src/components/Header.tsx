@@ -33,19 +33,13 @@ export default function Header() {
           <Link href="#speakers" className="text-lg px-4 py-2 hover:underline">
             speakers
           </Link>
-          <Link href="/sponsors" className="text-lg px-4 py-2 hover:underline">
-            sponsors
+          <Link href="#partners" className="text-lg px-4 py-2 hover:underline">
+            partners
           </Link>
-          <Link
-            href="/accommodations"
-            className="text-lg px-4 py-2 hover:underline"
-          >
+          <Link href="#swag" className="text-lg px-4 py-2 hover:underline">
             swag
           </Link>
-          <Link
-            href="/side-events"
-            className="text-lg px-4 py-2 hover:underline"
-          >
+          <Link href="#faq" className="text-lg px-4 py-2 hover:underline">
             faq
           </Link>
         </div>
@@ -79,19 +73,19 @@ export default function Header() {
         }`}
       >
         <Link href="#agenda" className="block px-4 py-2 text-lg">
-          Agenda
+          agenda
         </Link>
         <Link href="#speakers" className="block px-4 py-2 text-lg">
-          Speakers
+          speakers
         </Link>
-        <Link href="#sponsors" className="block px-4 py-2 text-lg">
-          Sponsors
+        <Link href="#partners" className="block px-4 py-2 text-lg">
+          partners
         </Link>
-        <Link href="/side-events" className="block px-4 py-2 text-lg">
-          Side Events
+        <Link href="#swag" className="block px-4 py-2 text-lg">
+          swag
         </Link>
-        <Link href="/accommodations" className="block px-4 py-2 text-lg">
-          Accommodations
+        <Link href="#faq" className="block px-4 py-2 text-lg">
+          faq
         </Link>
       </div>
     </nav>

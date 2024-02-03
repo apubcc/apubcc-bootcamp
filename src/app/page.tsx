@@ -3,7 +3,7 @@
 
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
-import { Welcome, Speakers, Agenda } from "@/components";
+import { Welcome, Speakers, Agenda, Swag, FAQ } from "@/components";
 import { createWidget } from "@typeform/embed";
 
 export default function Home() {
@@ -138,10 +138,13 @@ export default function Home() {
         <div className="section-divider" w-full></div>
         <Welcome />
         <div className="section-divider" w-full></div>
-        <Speakers />
-        <div className="section-divider" w-full></div>
         <Agenda />
         <div className="section-divider" w-full></div>
+        <Speakers />
+        <div className="section-divider" w-full></div>
+        <Swag />
+        <div className="section-divider" w-full></div>
+        <FAQ />
       </div>
     </main>
   );

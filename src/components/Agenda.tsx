@@ -21,7 +21,7 @@ const agendaItems = [
 ];
 
 // Agenda.jsx
-const Agenda = () => {
+export default function Agenda() {
   return (
     <>
       <h2
@@ -50,6 +50,4 @@ const Agenda = () => {
       </div>
     </>
   );
-};
-
-export default Agenda;
+}

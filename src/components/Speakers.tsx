@@ -62,7 +62,10 @@ const SpeakerCard = ({
 export default function Speakers() {
   return (
     <div className="container mx-auto">
-      <h2 className="text-lg md:text-2xl font-bold mb-3 space-mono-bold">
+      <h2
+        id="speakers"
+        className="text-lg md:text-2xl font-bold mb-3 space-mono-bold"
+      >
         Speakers
       </h2>
       <p className="text-sm md:text-xl mb-10 space-mono-regular">

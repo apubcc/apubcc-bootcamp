@@ -18,6 +18,10 @@ const config: Config = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    require("@tailwindcss/forms"),
+    require("@tailwindcss/typography"),
+    require("tailwindcss-filters"), // This plugin is needed for backdrop-filter
+  ],
 };
 export default config;
