@@ -24,10 +24,13 @@ const agendaItems = [
 const Agenda = () => {
   return (
     <>
-      <h2 className="text-lg md:text-2xl font-bold mb-10 space-mono-bold">
+      <h2
+        id="agenda"
+        className="text-lg md:text-2xl font-bold mb-10 space-mono-bold"
+      >
         Bootcamp Agenda
       </h2>
-      <div className="flex flex-col md:flex-row md:flex-wrap gap-4 justify-start w-full">
+      <div className=" flex flex-col md:flex-row md:flex-wrap gap-4 justify-start w-full">
         {agendaItems.map((item, index) => (
           <div
             key={index}

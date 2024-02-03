@@ -8,16 +8,10 @@ import Image from "next/image";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  // const router = useRouter();
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
-
-  // This function isn't used in the current version of the code.
-  // const closeMenu = () => {
-  //   setIsMenuOpen(false);
-  // };
 
   return (
     <nav className="flex items-center justify-between p-4 md:p-8 w-full">
@@ -33,10 +27,10 @@ export default function Header() {
         {/* Desktop menu */}
         <div className="hidden md:flex justify-end text-eventColor">
           {/* Menu items */}
-          <Link href="/agenda" className="text-lg px-4 py-2 hover:underline">
+          <Link href="#agenda" className="text-lg px-4 py-2 hover:underline">
             agenda
           </Link>
-          <Link href="/speakers" className="text-lg px-4 py-2 hover:underline">
+          <Link href="#speakers" className="text-lg px-4 py-2 hover:underline">
             speakers
           </Link>
           <Link href="/sponsors" className="text-lg px-4 py-2 hover:underline">
@@ -84,13 +78,13 @@ export default function Header() {
           isMenuOpen ? "block" : "hidden"
         }`}
       >
-        <Link href="/agenda" className="block px-4 py-2 text-lg">
+        <Link href="#agenda" className="block px-4 py-2 text-lg">
           Agenda
         </Link>
-        <Link href="/speakers" className="block px-4 py-2 text-lg">
+        <Link href="#speakers" className="block px-4 py-2 text-lg">
           Speakers
         </Link>
-        <Link href="/sponsors" className="block px-4 py-2 text-lg">
+        <Link href="#sponsors" className="block px-4 py-2 text-lg">
           Sponsors
         </Link>
         <Link href="/side-events" className="block px-4 py-2 text-lg">

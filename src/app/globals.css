@@ -173,3 +173,7 @@ body {
   text-transform: lowercase; /* Uppercase the text */
   font-size: 0.75rem; /* Smaller text size */
 }
+
+html {
+  scroll-behavior: smooth;
+}

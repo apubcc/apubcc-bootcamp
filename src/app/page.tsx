@@ -141,6 +141,7 @@ export default function Home() {
         <Speakers />
         <div className="section-divider" w-full></div>
         <Agenda />
+        <div className="section-divider" w-full></div>
       </div>
     </main>
   );
