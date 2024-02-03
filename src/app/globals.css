@@ -148,7 +148,7 @@ body {
     height: 1rem; /* Height of the arrow */
     background-color: #f1edb0; /* Ending color of the arrow */
     border-radius: 0;
-    transform: translate(-50%, -50%) rotate(45deg); /* Rotate to form an arrow */
+    transform: translate(-50%, -50%) rotate(90deg); /* Rotate to form an arrow */
   }
 }
 

@@ -26,7 +26,7 @@ export default function Welcome() {
         >
           Road to Devcon
         </a>{" "}
-        Initiative!
+        initiative!
       </h2>
       <p className="text-sm md:text-xl mb-10 space-mono-regular text-justify">
         Enjoyed our first bootcamp? We’re back with another exciting bootcamp
