@@ -64,35 +64,56 @@ body {
 }
 
 .button-primary {
-  background-color: #007bff; /* Bright blue background for primary buttons */
-  color: #ffffff; /* White text color for buttons */
-  padding: 1rem 2rem; /* Larger padding inside buttons for a pill shape */
   border-radius: 20rem; /* Large border-radius for pill shape */
-  font-weight: 600; /* Semi-bold font for buttons */
-  font-size: 1rem; /* Standard font size for buttons */
-  border: none; /* No border for a cleaner look */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
   text-transform: uppercase; /* Uppercase text for stylistic choice */
-  letter-spacing: 1px; /* Slightly increase letter-spacing */
+  letter-spacing: 2px; /* Slightly increase letter-spacing */
   transition: all 0.3s ease; /* Transition for hover effects */
+  padding: 0.5rem 2rem 0.5rem 3.5rem; /* Adjusted padding to accommodate the circular background */
+  color: #ffffff; /* White text color for the button text */
+  font-size: 1.5rem; /* Standard font size for buttons */
+  font-weight: 600; /* Semi-bold font for buttons */
+  position: relative; /* Needed for absolute positioning of the pseudo-element */
+  background-color: transparent; /* No background color for the main button */
+  border: none; /* No border for a cleaner look */
+  overflow: hidden; /* Ensure the pseudo-elements are clipped to the button's border-radius */
+}
+
+.button-primary::before {
+  content: ""; /* No content, we just want to create a shape */
+  position: absolute; /* Position absolutely within the button */
+  left: 1rem; /* Position from the left side of the button */
+  top: 50%; /* Center vertically */
+  width: 2rem; /* Width of the circle */
+  height: 2rem; /* Height of the circle */
+  background-color: #f1edb0; /* Background color of the circle */
+  border-radius: 50%; /* Make it round */
+  transform: translate(-50%, -50%); /* Center the circle perfectly */
+  transition: transform 0.3s ease; /* Transition for the arrow animation */
 }
 
 .button-primary:hover {
-  background-color: #0056b3; /* Slightly darker blue on hover */
-  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Larger shadow on hover */
-  transform: translateY(-2px); /* Lift button on hover */
+  background-color: transparent; /* Remain transparent on hover */
+  color: #f1edb0; /* Slightly lighter text on hover */
+}
+
+.button-primary:active {
+  color: #cccccc; /* Even lighter text when active/pressed */
+}
+
+.button-primary.active::before {
+  animation: slideDot 0.3s forwards; /* Use the forwards option to retain the final state */
 }
 
 /* New class for the image border */
 .image-border {
-  border: 1px solid #34d399; /* Stylish teal border */
-  padding: 3px; /* Space between the border and the image */
-  border-radius: 10vw; /* Curved border that spans across the screen */
+  border: 5px solid #f1edb0; /* Stylish teal border */
+  border-radius: 5vw; /* Curved border that spans across the screen */
   display: inline-block; /* To work correctly with Image component */
 }
 
 .typewriter-text {
-  color: #34d399; /* Teal color for typewriter text, similar to 'Sponsor' in the image */
+  color: #f1edb0; /* Teal color for typewriter text, similar to 'Sponsor' in the image */
   font-weight: 700; /* Bold font for visibility */
   padding: 0.5rem 0; /* Padding for typewriter text */
   position: relative;
@@ -110,4 +131,45 @@ body {
     align-items: center;
     justify-content: center;
   }
+}
+
+@keyframes slideDot {
+  from {
+    left: 1rem;
+    width: 2rem;
+    height: 2rem;
+    background-color: #f1edb0; /* Starting color of the dot */
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+  }
+  to {
+    left: calc(100% - 1rem);
+    width: 1rem; /* Width of the arrow */
+    height: 1rem; /* Height of the arrow */
+    background-color: #f1edb0; /* Ending color of the arrow */
+    border-radius: 0;
+    transform: translate(-50%, -50%) rotate(45deg); /* Rotate to form an arrow */
+  }
+}
+
+.section-divider {
+  position: relative;
+  margin: 3rem 0;
+  text-align: center;
+  width: 100vw; /* Set to 100% of the viewport width */
+  overflow: hidden; /* Hide the overflowing content */
+  border-bottom: 2px solid #f1edb0; /* Teal border for the divider */
+  line-height: 2rem; /* Smaller line-height to reduce the gap */
+  border-top: 2px solid #f1edb0; /* Teal border for the divider */
+}
+
+.section-divider::before {
+  content: "Smart Contracts • Ethereum • Consensus • Decentralized • Ledger • Cryptography • Tokenization • Web3 • DApps • NFT • Mining • Staking • DAO • DeFi • IPFS • Oracles • Interoperability • Scaling • Layer 2 • Gas • Fork • 51% Attack • Solidity • ERC-20 • ERC-721 • EVM • zk-SNARKs • zk-STARKs • Rollups";
+  display: inline-block;
+  text-align: center;
+  font-size: 0.75rem;
+  color: #f1edb0; /* Text color */
+  white-space: nowrap; /* Ensure the content doesn't wrap */
+  text-transform: lowercase; /* Uppercase the text */
+  font-size: 0.75rem; /* Smaller text size */
 }

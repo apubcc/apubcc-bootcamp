@@ -31,37 +31,28 @@ export default function Header() {
       {/* Right section: Navigation links */}
       <div className="items-center flex-grow space-mono-bold">
         {/* Desktop menu */}
-        <div className="hidden md:flex justify-end">
+        <div className="hidden md:flex justify-end text-eventColor">
           {/* Menu items */}
-          <Link
-            href="/agenda"
-            className="text-lg px-4 py-2 hover:text-blue-600"
-          >
-            agenda 
+          <Link href="/agenda" className="text-lg px-4 py-2 hover:underline">
+            agenda
           </Link>
-          <Link
-            href="/speakers"
-            className="text-lg px-4 py-2 hover:text-blue-600"
-          >
-            speakers 
+          <Link href="/speakers" className="text-lg px-4 py-2 hover:underline">
+            speakers
           </Link>
-          <Link
-            href="/sponsors"
-            className="text-lg px-4 py-2 hover:text-blue-600"
-          >
-            partners 
+          <Link href="/sponsors" className="text-lg px-4 py-2 hover:underline">
+            sponsors
           </Link>
           <Link
             href="/accommodations"
-            className="text-lg px-4 py-2 hover:text-blue-600"
+            className="text-lg px-4 py-2 hover:underline"
           >
-            swag 
+            swag
           </Link>
           <Link
             href="/side-events"
-            className="text-lg px-4 py-2 hover:text-blue-600"
+            className="text-lg px-4 py-2 hover:underline"
           >
-            faq 
+            faq
           </Link>
         </div>
 
@@ -89,7 +80,7 @@ export default function Header() {
 
       {/* Mobile menu */}
       <div
-        className={`absolute top-0 inset-x-0 p-4 transition transform origin-top-right md:hidden ${
+        className={`absolute top-0 inset-x-0 p-4 transition transform origin-top-right md:hidden space-mono-bold text-eventColor ${
           isMenuOpen ? "block" : "hidden"
         }`}
       >
