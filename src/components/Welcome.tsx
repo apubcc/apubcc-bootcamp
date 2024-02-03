@@ -34,9 +34,9 @@ export default function Welcome() {
         skills from zero to hero.
       </p>
       <h3 className="text-lg md:text-2xl mb-3 space-mono-bold">Why should I join?</h3>
-      <ul className="text-sm md:text-xl list-disc list-inside space-mono-regular">
-        <li className="pt-2">Interactive Workshops: Even more hands-on!</li>
-        <li className="pt-2">
+      <ul className="text-sm md:text-xl text-justify list-disc list-inside space-mono-regular">
+        <li className="pt-2 mb-3">Interactive Workshops: Even more hands-on!</li>
+        <li className="pt-2 mb-3">
           Web3 Developer Job Panel: Learn about the latest job opportunities in
           the Web3 space.
         </li>
