@@ -1,80 +1,113 @@
+// Header.tsx
+
 "use client";
 
 import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { usePathname } from "next/navigation";
 
-export default function Navbar() {
+export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const pathname = usePathname();
+  // const router = useRouter();
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
-  const closeMenu = () => {
-    setIsMenuOpen(false);
-  };
+  // This function isn't used in the current version of the code.
+  // const closeMenu = () => {
+  //   setIsMenuOpen(false);
+  // };
 
   return (
-    <nav className="sticky top-0 z-50 relative flex items-center justify-between bg-white p-4 md:pl-16 md:pt-10 md:pr-16">
-      {/* Left section: Hamburger menu and logo */}
-      <div className="flex items-center">
-        <button onClick={toggleMenu} className="focus:outline-none z-20 mr-5">
-          <div className="space-y-1.5">
-            <span
-              className={`block h-0.5 w-6 bg-black transform transition duration-500 ${
-                isMenuOpen ? "rotate-45 translate-y-3.0" : ""
-              }`}
-            ></span>
-            <span
-              className={`block h-0.5 w-6 bg-black transition-opacity duration-500 ${
-                isMenuOpen ? "opacity-0" : "opacity-100"
-              }`}
-            ></span>
-            <span
-              className={`block h-0.5 w-6 bg-black transform transition duration-500 ${
-                isMenuOpen ? "-rotate-45 -translate-y-3.0" : ""
-              }`}
-            ></span>
-          </div>
-        </button>
-        <div
-          className={`transition-opacity duration-500 ${
-            isMenuOpen ? "opacity-0" : "opacity-100"
-          }`}
-        >
-          {/* <Link href="/">
-            <Image src={Logo} alt="Logo" width={50} height={50} priority />
-          </Link> */}
+    <nav className="flex items-center justify-between p-4 md:p-8 w-full">
+      {/* Left section: Logo */}
+      <div className="flex items-center justify-start">
+        <Link href="https://apubcc.org" className="flex items-center">
+          <Image src="/logo.png" alt="Logo" width={150} height={50} priority />
+        </Link>
+      </div>
+
+      {/* Right section: Navigation links */}
+      <div className="items-center flex-grow space-mono-bold">
+        {/* Desktop menu */}
+        <div className="hidden md:flex justify-end">
+          {/* Menu items */}
+          <Link
+            href="/agenda"
+            className="text-lg px-4 py-2 hover:text-blue-600"
+          >
+            agenda 
+          </Link>
+          <Link
+            href="/speakers"
+            className="text-lg px-4 py-2 hover:text-blue-600"
+          >
+            speakers 
+          </Link>
+          <Link
+            href="/sponsors"
+            className="text-lg px-4 py-2 hover:text-blue-600"
+          >
+            partners 
+          </Link>
+          <Link
+            href="/accommodations"
+            className="text-lg px-4 py-2 hover:text-blue-600"
+          >
+            swag 
+          </Link>
+          <Link
+            href="/side-events"
+            className="text-lg px-4 py-2 hover:text-blue-600"
+          >
+            faq 
+          </Link>
         </div>
+
+        {/* Mobile menu button */}
+        <button
+          onClick={toggleMenu}
+          className="md:hidden focus:outline-none absolute right-4 top-8"
+        >
+          <svg
+            className="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="M4 6h16M4 12h16m-7 6h7"
+            ></path>
+          </svg>
+        </button>
       </div>
 
-      {/* Center section: Navigation links with responsive design */}
+      {/* Mobile menu */}
       <div
-        className={`fixed inset-0 z-1 flex-col items-center justify-center bg-white p-4 overflow-auto transition-transform transform ${
-          isMenuOpen
-            ? "flex opacity-100 scale-100"
-            : "hidden opacity-0 scale-95"
-        } ease-out duration-500`}
+        className={`absolute top-0 inset-x-0 p-4 transition transform origin-top-right md:hidden ${
+          isMenuOpen ? "block" : "hidden"
+        }`}
       >
-        {/* Updated link styles here */}
-        <Link href="/about" className="menu-item">
-          about
+        <Link href="/agenda" className="block px-4 py-2 text-lg">
+          Agenda
         </Link>
-        <Link href="/experience" className="menu-item">
-          experience
+        <Link href="/speakers" className="block px-4 py-2 text-lg">
+          Speakers
         </Link>
-        <Link href="/projects" className="menu-item">
-          projects
+        <Link href="/sponsors" className="block px-4 py-2 text-lg">
+          Sponsors
         </Link>
-        {/* Add more links as needed */}
-      </div>
-
-      {/* Right section: Current site location */}
-      <div className="hidden md:block">
-        <p className="text-gray-600 text-xl">{pathname}</p>
+        <Link href="/side-events" className="block px-4 py-2 text-lg">
+          Side Events
+        </Link>
+        <Link href="/accommodations" className="block px-4 py-2 text-lg">
+          Accommodations
+        </Link>
       </div>
     </nav>
   );

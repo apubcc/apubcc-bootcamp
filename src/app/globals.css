@@ -1,33 +1,113 @@
+/* globals.css */
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+.space-mono-regular {
+  font-family: "Space Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.space-mono-regular-italic {
+  font-family: "Space Mono", monospace;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.space-mono-bold {
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.space-mono-bold-italic {
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  font-style: italic;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: #121212; /* Dark background for dark mode */
+  /* background-image: linear-gradient(180deg, #121212 0%, #1c1c1c 100%); */
+  color: #ffffff; /* Light text color for readability */
 }
 
+/* Subtle shadow for a gentle, elegant touch */
+.text-shadow {
+  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Minimalistic border and color styles */
+.border-accent {
+  border: 2px solid #34d399; /* Stylish teal border */
+}
+
+/* Simple, clean utility classes */
+.text-title {
+  font-size: 4rem; /* Larger text size for the main title */
+  font-weight: bold; /* Bold font weight for the title */
+  color: #ffffff; /* Light text color */
+}
+
+.text-subtitle {
+  font-size: 1.75rem; /* Moderate size for subtitles */
+  color: #34d399; /* Stylish teal for subtitles */
+}
+
+.margin-vertical {
+  margin-top: 1rem; /* Vertical spacing for layout */
+  margin-bottom: 1rem;
+}
+
+.button-primary {
+  background-color: #007bff; /* Bright blue background for primary buttons */
+  color: #ffffff; /* White text color for buttons */
+  padding: 1rem 2rem; /* Larger padding inside buttons for a pill shape */
+  border-radius: 20rem; /* Large border-radius for pill shape */
+  font-weight: 600; /* Semi-bold font for buttons */
+  font-size: 1rem; /* Standard font size for buttons */
+  border: none; /* No border for a cleaner look */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  text-transform: uppercase; /* Uppercase text for stylistic choice */
+  letter-spacing: 1px; /* Slightly increase letter-spacing */
+  transition: all 0.3s ease; /* Transition for hover effects */
+}
+
+.button-primary:hover {
+  background-color: #0056b3; /* Slightly darker blue on hover */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Larger shadow on hover */
+  transform: translateY(-2px); /* Lift button on hover */
+}
+
+/* New class for the image border */
+.image-border {
+  border: 1px solid #34d399; /* Stylish teal border */
+  padding: 3px; /* Space between the border and the image */
+  border-radius: 10vw; /* Curved border that spans across the screen */
+  display: inline-block; /* To work correctly with Image component */
+}
+
+.typewriter-text {
+  color: #34d399; /* Teal color for typewriter text, similar to 'Sponsor' in the image */
+  font-weight: 700; /* Bold font for visibility */
+  padding: 0.5rem 0; /* Padding for typewriter text */
+  position: relative;
+  height: 3rem; /* Adjust the height as needed to match your design */
+}
+
+.text-transparent {
+  visibility: hidden;
+}
+
+/* Add custom utilities for Tailwind */
 @layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  .flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
