@@ -97,6 +97,10 @@ body {
   color: #f1edb0; /* Slightly lighter text on hover */
 }
 
+.button-primary::before {
+  animation: echoPulse 1.5s infinite;
+}
+
 .button-primary:active {
   color: #cccccc; /* Even lighter text when active/pressed */
 }
@@ -149,6 +153,24 @@ body {
     background-color: #f1edb0; /* Ending color of the arrow */
     border-radius: 0;
     transform: translate(-50%, -50%) rotate(90deg); /* Rotate to form an arrow */
+  }
+}
+
+@keyframes echoPulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(241, 237, 176, 0.5),
+      0 0 0 5px rgba(241, 237, 176, 0.4), 0 0 0 10px rgba(241, 237, 176, 0.3),
+      0 0 0 15px rgba(241, 237, 176, 0.2), 0 0 0 20px rgba(241, 237, 176, 0.1),
+      0 0 0 25px rgba(241, 237, 176, 0), 0 0 0 30px rgba(241, 237, 176, 0),
+      0 0 0 35px rgba(241, 237, 176, 0), 0 0 0 40px rgba(241, 237, 176, 0),
+      0 0 0 45px rgba(241, 237, 176, 0);
+      
+      
+  }
+  100% {
+    box-shadow: 0 0 0 5px rgba(241, 237, 176, 0.4),
+      0 0 0 15px rgba(241, 237, 176, 0.3), 0 0 0 25px rgba(241, 237, 176, 0.2),
+      0 0 0 35px rgba(241, 237, 176, 0.1), 0 0 0 45px rgba(241, 237, 176, 0);
   }
 }
 

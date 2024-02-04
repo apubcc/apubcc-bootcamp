@@ -4,7 +4,7 @@
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import { Welcome, Speakers, Agenda, Swag, FAQ, Partners } from "@/components";
-import { createWidget } from "@typeform/embed";
+import { PopupButton } from "@typeform/embed-react";
 
 export default function Home() {
   const [typewriterIndex, setTypewriterIndex] = useState(0);
@@ -72,15 +72,9 @@ export default function Home() {
     setIsActive(true); // Activate the button's animation
     setTimeout(() => setIsActive(false), 500); // Reset the state after the animation duration
     console.log("Navigating to event page...");
-    // createWidget("ikVbM7BD", {
-    //   container: document.getElementById("typeform"),
-    //   hideHeaders: true,
-    //   hideFooter: true,
-    //   opacity: 75,
-    //   hidden: {
-    //     email: "user@example.com",
-    //   },
-    // });
+    <PopupButton id="<form-id>" style={{ fontSize: 20 }} className="my-button">
+      click to open form in popup
+    </PopupButton>;
   };
 
   return (
@@ -115,14 +109,17 @@ export default function Home() {
             <p className="text-lg md:text-xl space-mono-regular typewriter-text mb-10 md:mb-5 ">
               {typewriterText}
             </p>
-            <button
+            <PopupButton
+              id="ikVbM7BD"
+              trackingProperties={{ source: "bootcampWebsite" }}
+              style={{ fontSize: 20 }}
               className={`button-primary space-mono-regular text-lg md:text-xl ${
                 isActive ? "active" : ""
               }`}
-              onClick={handleRegisterClick}
             >
-              Register
-            </button>
+              {/* a coding like text */}
+              REGISTER
+            </PopupButton>
           </div>
         </div>
         <div className="w-full lg:w-1/2 flex">
