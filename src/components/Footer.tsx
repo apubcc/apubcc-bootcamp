@@ -10,6 +10,9 @@ export default function Footer() {
         {/* Left section: Logo */}
         <div className="mb-4 md:mb-0">
           <Image
+            onClick={() => {
+              window.open("https://apubcc.org");
+            }}
             src="/logo.png"
             alt="APUBCC Logo"
             width={250}
