@@ -65,7 +65,7 @@ export default function FAQSection() {
     <div className="w-full">
       <h2
         id="faq"
-        className="text-lg md:text-2xl font-bold mb-10 space-mono-bold"
+        className="text-lg md:text-2xl font-bold mb-5 space-mono-bold"
       >
         Frequently Asked Questions
       </h2>

@@ -42,9 +42,9 @@ const SpeakerCard = ({
   title: string;
 }) => {
   return (
-    <div className="p-4 w-full md:w-1/4 flex flex-col items-center space-y-4">
+    <div className="p-4 w-1/2 md:w-1/4 sm: w-full flex flex-col items-center space-y-4">
       <div
-        className="h-72 w-72 bg-cover rounded-full overflow-hidden object-cover" // Adjusted to Tailwind CSS classes for 300px by 300px
+        className="md:h-72 md:w-72 h-36 w-36 bg-cover rounded-full overflow-hidden object-cover" // Adjusted to Tailwind CSS classes for 300px by 300px
         style={{ backgroundImage: `url('${imageSrc}')` }} // Removed height inline style
         title={name}
       >
@@ -52,7 +52,7 @@ const SpeakerCard = ({
       </div>
       <div className="w-72 border-gray-400 bg-white rounded p-4 flex flex-col items-center">
         <p className="text-sm text-gray-600">{title}</p>
-        <div className="text-gray-900 font-bold text-xl mb-2">{name}</div>
+        <div className="text-gray-900 font-bold text-lg mb-2">{name}</div>
       </div>
     </div>
   );
@@ -68,7 +68,7 @@ export default function Speakers() {
       >
         Speakers
       </h2>
-      <p className="text-sm md:text-xl mb-10 space-mono-regular">
+      <p className="text-justify text-sm md:text-xl mb-10 space-mono-regular">
         The lineup of speakers here will be updated on an ongoing basis, do
         check back from time to time!
       </p>

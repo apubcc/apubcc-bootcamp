@@ -40,7 +40,7 @@ export default function Swag() {
         {swags.map((item, index) => (
           <div
             key={index}
-            className="mt-4 w-full md:w-1/4 p-5 bg-gradient-to-r from-yellow-500 to-orange-500 rounded-lg shadow-lg overflow-hidden transform transition duration-300 hover:scale-105 hover:-translate-y-1"
+            className="mt-4 w-1/2 md:w-1/4 p-5 bg-gradient-to-r from-yellow-500 to-orange-500 rounded-lg shadow-lg overflow-hidden transform transition duration-300 hover:scale-105 hover:-translate-y-1"
           >
             <h3 className="text-lg font-bold text-white text-center mb-2">
               {item.name}

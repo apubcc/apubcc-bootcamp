@@ -30,7 +30,7 @@ export default function Agenda() {
       >
         Bootcamp Agenda
       </h2>
-      <div className=" flex flex-col md:flex-row md:flex-wrap gap-4 justify-start w-full">
+      <div className="flex flex-col md:flex-row md:flex-wrap gap-4 justify-start w-full">
         {agendaItems.map((item, index) => (
           <div
             key={index}
