@@ -78,7 +78,7 @@ export default function FAQSection() {
               } bg-gradient-to-r from-blue-600 to-white-500 text-white shadow-xl hover:shadow-2xl transition-shadow duration-300`}
               onClick={() => toggleFAQ(index)}
             >
-              <span className="flex-1 space-mono-regular">{faq.question}</span>
+              <span className="flex-1 space-mono-regular text-justify">{faq.question}</span>
               <span className="ml-4">
                 {openIndex === index ? (
                   <MinusIcon className="w-6 h-6" />
@@ -88,7 +88,7 @@ export default function FAQSection() {
               </span>
             </button>
             {openIndex === index && (
-              <div className="space-mono-regular-italic px-6 text-md text-gray-700 bg-white rounded-b-lg shadow-lg">
+              <div className="space-mono-regular-italic px-6 text-md text-gray-700 bg-white rounded-b-lg shadow-lg text-justify">
                 {faq.answer}
                 {/* render optional links */}
                 {faq.question ===

@@ -1,92 +1,70 @@
-// Header.tsx
-
 "use client";
 
 import React, { useState } from "react";
-import Link from "next/link";
 import Image from "next/image";
+import Link from "next/link";
+import { MenuIcon, XIcon } from "@heroicons/react/outline"; // Import icons from Heroicons
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
+  // Function to handle menu animation
+  const menuClasses = isMenuOpen
+    ? "fixed inset-0 bg-black backdrop-filter backdrop-blur-lg z-40 opacity-100 transition-opacity duration-500"
+    : "fixed inset-0 bg-black backdrop-filter backdrop-blur-lg z-40 opacity-0 transition-opacity duration-500 pointer-events-none";
 
   return (
-    <nav className="flex items-center justify-between p-4 md:p-8 w-full">
-      {/* Left section: Logo */}
-      <div className="flex items-center justify-start">
-        <Link href="https://apubcc.org" className="flex items-center">
-          <Image src="/logo.png" alt="Logo" width={150} height={50} priority />
-        </Link>
+    <nav className="flex items-center justify-between p-4 md:p-8 w-full bg-black relative z-20">
+      {/* Logo */}
+      <div>
+        <Image src="/logo.png" alt="Logo" width={150} height={50} priority />
       </div>
 
-      {/* Right section: Navigation links */}
-      <div className="items-center flex-grow space-mono-bold">
-        {/* Desktop menu */}
-        <div className="hidden md:flex justify-end text-eventColor">
-          {/* Menu items */}
-          <Link href="#agenda" className="text-lg px-4 py-2 hover:underline">
-            agenda
-          </Link>
-          <Link href="#speakers" className="text-lg px-4 py-2 hover:underline">
-            speakers
-          </Link>
-          <Link href="#partners" className="text-lg px-4 py-2 hover:underline">
-            partners
-          </Link>
-          <Link href="#swag" className="text-lg px-4 py-2 hover:underline">
-            swag
-          </Link>
-          <Link href="#faq" className="text-lg px-4 py-2 hover:underline">
-            faq
-          </Link>
-        </div>
-
-        {/* Mobile menu button */}
-        <button
-          onClick={toggleMenu}
-          className="md:hidden focus:outline-none absolute right-4 top-8"
-        >
-          <svg
-            className="w-6 h-6"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              d="M4 6h16M4 12h16m-7 6h7"
-            ></path>
-          </svg>
-        </button>
-      </div>
-
-      {/* Mobile menu */}
-      <div
-        className={`absolute top-0 inset-x-0 p-4 transition transform origin-top-right md:hidden space-mono-bold text-eventColor ${
-          isMenuOpen ? "block" : "hidden"
-        }`}
+      {/* Hamburger Menu */}
+      <button
+        onClick={() => setIsMenuOpen(!isMenuOpen)}
+        className="md:hidden focus:outline-none z-50"
       >
-        <Link href="#agenda" className="block px-4 py-2 text-lg">
-          agenda
-        </Link>
-        <Link href="#speakers" className="block px-4 py-2 text-lg">
-          speakers
-        </Link>
-        <Link href="#partners" className="block px-4 py-2 text-lg">
-          partners
-        </Link>
-        <Link href="#swag" className="block px-4 py-2 text-lg">
-          swag
-        </Link>
-        <Link href="#faq" className="block px-4 py-2 text-lg">
-          faq
-        </Link>
+        {isMenuOpen ? (
+          <XIcon className="h-8 w-8 text-yellow-500" />
+        ) : (
+          <MenuIcon className="h-8 w-8 text-white" />
+        )}
+      </button>
+
+      {/* Mobile Menu Overlay with Blur Effect and Animation */}
+      <div className={menuClasses}>
+        <div className="absolute top-0 right-0 mt-16 mr-4 p-6 bg-white rounded-lg transition-transform transform duration-500">
+          <div className="flex flex-col items-end">
+            {["#agenda", "#speakers", "#partners", "#swag", "#faq"].map(
+              (href, index) => (
+                <Link
+                  key={index}
+                  href={href}
+                  onClick={() => setIsMenuOpen(false)}
+                  className="space-mono-bold text-eventColor text-lg hover:text-yellow-300 p-2 block transition-colors duration-300"
+                >
+                  {href.substring(1)}
+                </Link>
+              )
+            )}
+          </div>
+        </div>
+      </div>
+
+      {/* Desktop Menu */}
+      <div className="hidden md:flex space-x-4">
+        {["#agenda", "#speakers", "#partners", "#swag", "#faq"].map(
+          (href, index) => (
+            <Link
+              key={index}
+              href={href}
+              className="space-mono-bold text-eventColor text-lg hover:underline transition-colors duration-300"
+            >
+              {href.substring(1)}
+            </Link>
+          )
+        )}
       </div>
     </nav>
   );
