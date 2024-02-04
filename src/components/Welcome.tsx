@@ -4,7 +4,7 @@ import React from "react";
 
 export default function Welcome() {
   return (
-    <section className="text-white space-mono-regular">
+    <section className="text-white space-mono-regular pt-10 md:pt-20">
       <h2 className="text-lg md:text-2xl text-justify space-mono-bold mb-3">
         Welcome
         <sup>

@@ -34,7 +34,7 @@ export default function Swag() {
         className="text-center text-lg md:text-2xl font-bold space-mono-bold"
       >
         Merchandise{" "}
-        <span className="italic space-mono-bold-italic">(`&quot;Swags`&quot;)</span>
+        <span className="italic space-mono-bold-italic">(&quot;Swags&quot;)</span>
       </h2>
       <div className="flex justify-center items-center flex-wrap md:flex-wrap md:w-full">
         {swags.map((item, index) => (

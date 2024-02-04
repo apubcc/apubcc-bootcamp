@@ -132,7 +132,6 @@ export default function Home() {
             />
           </div>
         </div>
-        <div className="section-divider" w-full></div>
         <Welcome />
         <div className="section-divider" w-full></div>
         <Agenda />
@@ -141,9 +140,9 @@ export default function Home() {
         <div className="section-divider" w-full></div>
         <Swag />
         <div className="section-divider" w-full></div>
-        <FAQ />
-        <div className="section-divider" w-full></div>
         <Partners />
+        <div className="section-divider" w-full></div>
+        <FAQ />
       </div>
     </main>
   );

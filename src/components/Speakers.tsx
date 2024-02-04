@@ -42,9 +42,9 @@ const SpeakerCard = ({
   title: string;
 }) => {
   return (
-    <div className="p-4 w-1/2 md:w-1/4 sm: w-full flex flex-col items-center space-y-4">
+    <div className="p-4 w-1/2 md:w-1/4 flex flex-col items-center space-y-4 ">
       <div
-        className="md:h-72 md:w-72 h-36 w-36 bg-cover rounded-full overflow-hidden object-cover" // Adjusted to Tailwind CSS classes for 300px by 300px
+        className=" md:h-72 md:w-72 h-36 w-36 bg-cover rounded-full overflow-hidden object-cover" // Adjusted to Tailwind CSS classes for 300px by 300px
         style={{ backgroundImage: `url('${imageSrc}')` }} // Removed height inline style
         title={name}
       >

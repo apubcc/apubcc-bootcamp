@@ -62,7 +62,7 @@ export default function Footer() {
               GitHub
             </a>
           </div>
-          <span className="text-xs md:text-lg md:text-lg text-center md:text-right space-mono-regular-italic">
+          <span className="text-xs md:text-sm md:text-lg text-center md:text-right space-mono-regular-italic">
             © {new Date().getFullYear()} APUBCC. All rights reserved. Built with
             🤖 by{" "}
             <a
