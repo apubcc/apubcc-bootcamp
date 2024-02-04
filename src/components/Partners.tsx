@@ -50,17 +50,17 @@ export default function Partners() {
         </div>
         <div className="mb-8">
           <h3 className="text-lg md:text-xl mb-2">Venue Sponsor</h3>
-          <div className="border-b-4 border-yellow-500 md:w-full w-full mx-auto mb-4"></div>
+          <div className="border-b-2 border-yellow-500 md:w-full w-full mx-auto mb-4"></div>
           <PartnerLogos logos={venueSponsors} />
         </div>
         <div className="mb-8">
           <h3 className="text-lg md:text-xl mb-2">Community Partners</h3>
-          <div className="border-b-4 border-yellow-500 md:w-full mx-auto mb-4"></div>
+          <div className="border-b-2 border-yellow-500 md:w-full mx-auto mb-4"></div>
           <PartnerLogos logos={communityPartners} />
         </div>
         <div className="mb-8">
           <h3 className="text-lg md:text-xl mb-2">Media Partners</h3>
-          <div className="border-b-4 border-yellow-500 md:w-full mx-auto mb-4"></div>
+          <div className="border-b-2 border-yellow-500 md:w-full mx-auto mb-4"></div>
           <PartnerLogos logos={mediaPartners} />
         </div>
       </section>
