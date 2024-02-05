@@ -6,18 +6,18 @@ import React from "react";
 const agendaItems = [
   {
     time: "8:00 AM",
-    description: "Registration",
+    description: "Registration + Breakfast",
     venue: "Cafeteria",
   },
   { time: "9:00 AM", description: "Opening Speech", venue: "Atrium" },
-  { time: "9:15 AM", description: "Workshop A", venue: "Audi 2" },
-  { time: "11:15 AM", description: "Workshop B", venue: "Audi 2" },
-  { time: "12:45 PM", description: "Lunch", venue: "Cafeteria" },
-  { time: "1:45 PM", description: "Activity", venue: "TBC" },
-  { time: "3:00 PM", description: "Workshop C", venue: "Audi 2" },
-  { time: "4:30 PM", description: "Workshop D", venue: "Audi 2" },
-  { time: "6:00 PM", description: "Panel", venue: "Audi 2" },
-  { time: "7:00 PM", description: "Dinner + Networking", venue: "Cafeteria" },
+  { time: "9:15 AM", description: "A Workshop", venue: "Audi 2" },
+  { time: "11:15 AM", description: "B Workshop", venue: "Audi 2" },
+  { time: "12:00 PM", description: "Lunch", venue: "Cafeteria" },
+  { time: "1:15 PM", description: "Activity (TBA)", venue: "TBC" },
+  { time: "3:00 PM", description: "C Workshop", venue: "Audi 2" },
+  { time: "4:30 PM", description: "D Workshop", venue: "Audi 2" },
+  { time: "5:15 PM", description: "Panel Session", venue: "Audi 2" },
+  { time: "6:15 PM", description: "Dinner + Networking", venue: "Cafeteria" },
 ];
 
 // Agenda.jsx

@@ -12,7 +12,7 @@ const faqs = [
   {
     question: "Who can attend this bootcamp?",
     answer:
-      "The bootcamp is open to all university students and lecturers interested in learning about blockchain, regardless of their prior knowledge or experience in the field.",
+      "The bootcamp is open to all university students and lecturers interested in learning about basic blockchain development, regardless of their prior knowledge in development or experience in the field.",
   },
   {
     question:
@@ -22,26 +22,26 @@ const faqs = [
   },
   {
     question:
-      "I do not know anything about Blockchain or Cryptocurrencies, will I be able to catch up with what’s being shared inside the bootcamp?",
+      "I do not know anything about Blockchain Development or Web3 Development, will I be able to catch up with what’s being shared inside the bootcamp?",
     answer:
-      "Yes definitely! This is our first bootcamp and is tailored towards beginners to learn more about the field.",
+      "Yes definitely! The contents within the workshops that will be covered within this bootcamp will be basic and easy for everyone to follow along.",
   },
   {
     question:
-      "Will this bootcamp be talking about the trading and investment aspect of cryptocurrencies?",
+      "Will this bootcamp be having more talks than  to teach about blockchain development?",
     answer:
-      "No. We are more focused on sharing about blockchain technology, what is being powered by it, and use cases of it!",
+      "No. The bootcamp will be workshop focused. The workshops are designed to be interactive and hands-on, so that participants can apply their knowledge practically.",
   },
   {
     question: "How will the bootcamp be conducted?",
     answer:
-      "The bootcamp comprises talks, workshops, interactive sessions, games and panel discussions. It's a mix of learning through presentations and hands-on activities to reinforce the concepts covered.",
+      "The bootcamp comprises of workshops, activity sessions, networking sessions and panel discussions. It's a mix of learning through development workshops taught by industry professionals and applying what you learned within your own project.",
   },
   {
     question:
-      "Do I need to bring my laptop for any practical application or hands-on activities?",
+      "Do I need to bring my laptop for the workshops within the bootcamp?",
     answer:
-      "Yes! Do bring your laptop as there are workshops and activities that are planned where participants can apply their knowledge practically. These include creating a portfolio, exploring blockchains, understanding DeFi tools, and participating in a clue hunt.",
+      "Yes! It is COMPULSORY to bring your own laptop with proper setups as shown in the setup guide before you attend the workshops within the bootcamp.",
   },
   {
     question: "How do I stay updated on the latest news and announcements?",
