@@ -123,7 +123,7 @@ export default function Home() {
           </div>
         </div>
         <div className="w-full lg:w-1/2 flex">
-          <div className="image-border">
+          <div className="image-border" style={{borderRadius: '10px', overflow: 'hidden'}}>
             <Image
               src="/hero.jpg"
               alt="Event Image"
