@@ -2,9 +2,7 @@ import React from "react";
 
 type PartnerLogosProps = { url: string; src: string }[];
 
-const mainSponsors: PartnerLogosProps = [
-  { url: "https://devcon.org", src: "/RTD.svg" },
-];
+const mainSponsors: PartnerLogosProps = [];
 const venueSponsors: PartnerLogosProps = [
   { url: "https://apu.edu.my", src: "/APU.png" },
 ];
