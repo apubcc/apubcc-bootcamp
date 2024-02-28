@@ -5,12 +5,12 @@ const swags = [
   {
     name: "Swag 1",
     description: "Coming Soon",
-    imageUrl: "/wip.png", // Update the path to your image
+    imageUrl: "/cap.png", // Update the path to your image
   },
   {
     name: "Swag 2",
     description: "Coming Soon",
-    imageUrl: "/wip.png", // Update the path to your image
+    imageUrl: "/socks.png", // Update the path to your image
   },
   {
     name: "Swag 3",

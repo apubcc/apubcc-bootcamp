@@ -13,11 +13,11 @@ const agendaItems = [
   { time: "9:15 AM", description: "A Workshop", venue: "Audi 2" },
   { time: "11:15 AM", description: "B Workshop", venue: "Audi 2" },
   { time: "12:00 PM", description: "Lunch", venue: "Cafeteria" },
-  { time: "1:15 PM", description: "Activity (TBA)", venue: "TBC" },
-  { time: "3:00 PM", description: "C Workshop", venue: "Audi 2" },
-  { time: "4:30 PM", description: "D Workshop", venue: "Audi 2" },
-  { time: "5:15 PM", description: "Panel Session", venue: "Audi 2" },
-  { time: "6:15 PM", description: "Dinner + Networking", venue: "Cafeteria" },
+  { time: "1:15 PM", description: "Activity (What is the 'Unknown'?", venue: "Audi 2" },
+  { time: "3:15 PM", description: "Solana Workshop", venue: "Audi 2" },
+  { time: "4:45 PM", description: "Arbitrum Workshop", venue: "Audi 2" },
+  { time: "5:30 PM", description: "Panel Session", venue: "Audi 2" },
+  { time: "6:30 PM", description: "Dinner + Networking", venue: "Cafeteria" },
 ];
 
 // Agenda.jsx
