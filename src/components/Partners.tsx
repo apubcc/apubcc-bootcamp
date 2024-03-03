@@ -3,7 +3,9 @@ import React from "react";
 type PartnerLogosProps = { url: string; src: string }[];
 
 const mainSponsors: PartnerLogosProps = [
-  { url: "https://arbitrum.io", src: "AF.png"}
+  { url: "https://arbitrum.io", src: "AF.png"},
+  { url: "https://solana.com", src: "solanaLogo.png" },
+  { url: "https://twitter.com/SuperteamMY", src: "superteam.png" },
 ];
 const venueSponsors: PartnerLogosProps = [
   { url: "https://apu.edu.my", src: "/APU.png" },
