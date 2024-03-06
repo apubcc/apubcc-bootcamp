@@ -64,45 +64,22 @@ body {
 }
 
 .button-primary {
-  border-radius: 20rem; /* Large border-radius for pill shape */
+  border-radius: 30rem; /* Large border-radius for pill shape */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
   text-transform: uppercase; /* Uppercase text for stylistic choice */
   letter-spacing: 2px; /* Slightly increase letter-spacing */
   transition: all 0.3s ease; /* Transition for hover effects */
-  padding: 0.5rem 2rem 0.5rem 3.5rem; /* Adjusted padding to accommodate the circular background */
-  color: #ffffff; /* White text color for the button text */
+  padding: 0.5rem 2rem; /* Standard padding */
+  color: #000; /* Black text color for the button text */
   font-size: 1.5rem; /* Standard font size for buttons */
   font-weight: 600; /* Semi-bold font for buttons */
-  position: relative; /* Needed for absolute positioning of the pseudo-element */
-  background-color: transparent; /* No background color for the main button */
+  background-color: #fada5e; /* Yellow background color */
   border: none; /* No border for a cleaner look */
-  overflow: hidden; /* Ensure the pseudo-elements are clipped to the button's border-radius */
-}
-
-.button-primary::before {
-  content: ""; /* No content, we just want to create a shape */
-  position: absolute; /* Position absolutely within the button */
-  left: 1rem; /* Position from the left side of the button */
-  top: 50%; /* Center vertically */
-  width: 2rem; /* Width of the circle */
-  height: 2rem; /* Height of the circle */
-  background-color: #f1edb0; /* Background color of the circle */
-  border-radius: 50%; /* Make it round */
-  transform: translate(-50%, -50%); /* Center the circle perfectly */
-  transition: transform 0.3s ease; /* Transition for the arrow animation */
 }
 
 .button-primary:hover {
-  background-color: transparent; /* Remain transparent on hover */
-  color: #f1edb0; /* Slightly lighter text on hover */
-}
-
-.button-primary::before {
-  animation: echoPulse 1.5s infinite;
-}
-
-.button-primary:active {
-  color: #cccccc; /* Even lighter text when active/pressed */
+  background-color: #000; /* Change background to black on hover */
+  color: #fff; /* Change text color to white on hover */
 }
 
 .button-primary.active::before {
@@ -164,8 +141,6 @@ body {
       0 0 0 25px rgba(241, 237, 176, 0), 0 0 0 30px rgba(241, 237, 176, 0),
       0 0 0 35px rgba(241, 237, 176, 0), 0 0 0 40px rgba(241, 237, 176, 0),
       0 0 0 45px rgba(241, 237, 176, 0);
-      
-      
   }
   100% {
     box-shadow: 0 0 0 5px rgba(241, 237, 176, 0.4),
