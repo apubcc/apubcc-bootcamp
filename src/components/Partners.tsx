@@ -11,7 +11,9 @@ const venueSponsors: PartnerLogosProps = [
   { url: "https://apu.edu.my", src: "/APU.png" },
 ];
 
-const communityPartners: PartnerLogosProps = [];
+const communityPartners: PartnerLogosProps = [
+  { url: "https://www.myunilah.com", src:"unilah.png" }
+];
 
 const mediaPartners: PartnerLogosProps = [];
 

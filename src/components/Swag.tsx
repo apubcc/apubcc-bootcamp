@@ -9,13 +9,13 @@ const swags = [
   },
   {
     name: "Swag 2",
-    description: "Coming Soon",
-    imageUrl: "/socks.png", // Update the path to your image
+    description: "Lanyard",
+    imageUrl: "/lanyard.jpeg", // Update the path to your image
   },
   {
     name: "Swag 3",
-    description: "Lanyard",
-    imageUrl: "/lanyard.jpeg", // Update the path to your image
+    description: "Coming Soon",
+    imageUrl: "/wip.png", // Update the path to your image
   },
   {
     name: "Swag 4",
