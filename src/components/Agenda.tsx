@@ -14,7 +14,7 @@ const agendaItems = [
   { time: "11:15 AM", description: "Partner Workshop (TBA)", venue: "Audi 2" },
   { time: "12:15 PM", description: "Lunch", venue: "Cafeteria" },
   { time: "1:15 PM", description: "Activity (What is the 'Unknown'?)", venue: "Audi 2" },
-  { time: "3:15 PM", description: "Solana Workshop", venue: "Audi 2" },
+  { time: "3:15 PM", description: "Partner Workshop", venue: "Audi 2" }, //Put solana here once RTD approved
   { time: "4:45 PM", description: "Partner Workshop (TBA)", venue: "Audi 2" },
   { time: "5:30 PM", description: "Developer Job Panel Session", venue: "Audi 2" },
   { time: "6:30 PM", description: "Dinner + Networking", venue: "Cafeteria" },
