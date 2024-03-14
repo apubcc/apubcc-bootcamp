@@ -4,7 +4,7 @@ type PartnerLogosProps = { url: string; src: string }[];
 
 const mainSponsors: PartnerLogosProps = [
   { url: "https://arbitrum.io", src: "AF.png"},
-  /*{ url: "https://solana.com", src: "solanaLogo.png" },*/
+  /*{ url: "https://solana.com", src: "solanaLogo.png" },*/ // Solana logo to be added once RTD approved
   { url: "https://twitter.com/SuperteamMY", src: "superteam.png" },
   { url: "https://polygon.technology/", src:"polygon white.png" }
 ];
@@ -18,7 +18,9 @@ const communityPartners: PartnerLogosProps = [
 
 const mediaPartners: PartnerLogosProps = [];
 
-const supportedByLogos: PartnerLogosProps = [];
+const supportedByLogos: PartnerLogosProps = [
+  { url: "https://apu-hackthletes.vercel.app/", src: "hackthletes.png"}
+];
 
 // modify the PartnerLogos to be able to be clicked and open a new tab with the sponsor's website. the website is to be received alongside the URL of image src.
 const PartnerLogos = ({ logos }: { logos: { url: string; src: string }[] }) => (
@@ -34,7 +36,7 @@ const PartnerLogos = ({ logos }: { logos: { url: string; src: string }[] }) => (
         <img
           src={logo.src}
           alt={`Partner logo ${index + 1}`}
-          className="h-12 md:h-24 transition-transform duration-300 hover:scale-105"
+          className="h-8 md:h-16 transition-transform duration-300 hover:scale-105" 
         />
       </a>
     ))}
@@ -68,12 +70,11 @@ export default function Partners() {
           <div className="border-b-2 border-yellow-500 md:w-full mx-auto mb-4"></div>
           <PartnerLogos logos={mediaPartners} />
         </div>
-      </section>
-      <section>
-        <h2 className="text-xl md:text-2xl font-bold mb-6 space-mono-bold">
-          Supported by
-        </h2>
+      <div className="mb-8">
+          <h3 className="text-lg md:text-xl mb-2">Supported by</h3>
+          <div className="border-b-2 border-yellow-500 md:w-full mx-auto mb-4"></div>
         <PartnerLogos logos={supportedByLogos} />
+      </div>
       </section>
     </div>
   );
