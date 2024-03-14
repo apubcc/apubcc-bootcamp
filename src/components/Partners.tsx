@@ -6,6 +6,7 @@ const mainSponsors: PartnerLogosProps = [
   { url: "https://arbitrum.io", src: "AF.png"},
   { url: "https://solana.com", src: "solanaLogo.png" },
   { url: "https://twitter.com/SuperteamMY", src: "superteam.png" },
+  { url: "https://polygon.technology/", src:"polygon white.png" }
 ];
 const venueSponsors: PartnerLogosProps = [
   { url: "https://apu.edu.my", src: "/APU.png" },
