@@ -4,8 +4,8 @@ type PartnerLogosProps = { url: string; src: string }[];
 
 const mainSponsors: PartnerLogosProps = [
   { url: "https://arbitrum.io", src: "AF.png"},
-  /*{ url: "https://solana.com", src: "solanaLogo.png" },*/ // Solana logo to be added once RTD approved
-  { url: "https://twitter.com/SuperteamMY", src: "superteam.png" },
+  // { url: "https://solana.com", src: "solanaLogo.png" }, //Solana logo to be added once RTD approved
+  // { url: "https://twitter.com/SuperteamMY", src: "superteam.png" },
   { url: "https://polygon.technology/", src:"polygon white.png" }
 ];
 const venueSponsors: PartnerLogosProps = [

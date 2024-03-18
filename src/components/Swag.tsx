@@ -46,12 +46,14 @@ export default function Swag() {
               {item.name}
             </h3>
             <div className="flex justify-center mb-2">
-              <Image
-                src={item.imageUrl}
-                alt={item.name}
-                width={200}
-                height={200}
-              />
+              <div className="border-4 border-white rounded overflow-hidden">
+                <Image
+                  src={item.imageUrl}
+                  alt={item.name}
+                  width={200}
+                  height={200}
+                />
+              </div>
             </div>
             <p className="text-sm text-white text-center">{item.description}</p>
           </div>
@@ -60,3 +62,4 @@ export default function Swag() {
     </>
   );
 }
+

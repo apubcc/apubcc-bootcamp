@@ -19,10 +19,15 @@ const speakers = [
     name: "Tan Hao Xiang",
     title: "Arbitrum Ambassador",
   },
+  // {
+  //   imageSrc: "henry.jpg",
+  //   name: "Henry Lee",
+  //   title: "Superteam Malaysia Lead",
+  // },
   {
-    imageSrc: "henry.jpg",
-    name: "Henry Lee",
-    title: "Superteam Malaysia Lead",
+    imageSrc: "placeholderPerson.jpg",
+    name: "Name",
+    title: "Role",
   },
   {
     imageSrc: "placeholderPerson.jpg",
