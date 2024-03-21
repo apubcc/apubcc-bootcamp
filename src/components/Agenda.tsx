@@ -10,12 +10,12 @@ const agendaItems = [
     venue: "Cafeteria",
   },
   { time: "9:00 AM", description: "Opening Speech", venue: "Atrium" },
-  { time: "9:15 AM", description: "Arbitrum Workshop", venue: "Audi 2" },
-  { time: "11:15 AM", description: "Partner Workshop (TBA)", venue: "Audi 2" },
-  { time: "12:15 PM", description: "Lunch", venue: "Cafeteria" },
+  { time: "9:15 AM", description: "Partner Workshop", venue: "Audi 2" },
+  { time: "10:45 AM", description: "Partner Workshop ", venue: "Audi 2" }, //Put solana here once RTD approved
+  { time: "12:00 PM", description: "Lunch", venue: "Cafeteria" },
   { time: "1:15 PM", description: "Activity (What is the 'Unknown'?)", venue: "Audi 2" },
-  { time: "3:15 PM", description: "Partner Workshop", venue: "Audi 2" }, //Put solana here once RTD approved
-  { time: "4:45 PM", description: "Partner Workshop (TBA)", venue: "Audi 2" },
+  { time: "3:15 PM", description: "Arbitrum Workshop", venue: "Audi 2" }, 
+  { time: "4:45 PM", description: "Dune Analytics Workshop", venue: "Audi 2" },
   { time: "5:30 PM", description: "Developer Job Panel Session", venue: "Audi 2" },
   { time: "6:30 PM", description: "Dinner + Networking", venue: "Cafeteria" },
 ];
