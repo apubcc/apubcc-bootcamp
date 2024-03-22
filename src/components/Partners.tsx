@@ -4,7 +4,7 @@ type PartnerLogosProps = { url: string; src: string }[];
 
 const mainSponsors: PartnerLogosProps = [
   { url: "https://arbitrum.io", src: "AF.png"},
-  // { url: "https://solana.com", src: "solanaLogo.png" }, //Solana logo to be added once RTD approved
+  { url: "https://esp.ethereum.foundation/devcon-grants", src: "RTD.png"},
   // { url: "https://twitter.com/SuperteamMY", src: "superteam.png" },
   { url: "https://polygon.technology/", src:"polygon white.png" }
 ];
@@ -20,6 +20,7 @@ const mediaPartners: PartnerLogosProps = [];
 
 const supportedByLogos: PartnerLogosProps = [
   { url: "https://apu-hackthletes.vercel.app/", src: "hackthletes.png"}
+  // { url: "https://solana.com", src: "solanaLogo.png" }, //Solana logo to be added once RTD approved
 ];
 
 // modify the PartnerLogos to be able to be clicked and open a new tab with the sponsor's website. the website is to be received alongside the URL of image src.
