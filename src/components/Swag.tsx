@@ -4,8 +4,8 @@ import Image from "next/image";
 const swags = [
   {
     name: "Swag 1",
-    description: "Coming Soon",
-    imageUrl: "/cap.png", // Update the path to your image
+    description: "Bucket Hat",
+    imageUrl: "/hat.jpeg", // Update the path to your image
   },
   {
     name: "Swag 2",
