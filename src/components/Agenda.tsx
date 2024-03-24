@@ -9,7 +9,7 @@ const agendaItems = [
     description: "Registration + Breakfast",
     venue: "Cafeteria",
   },
-  { time: "9:00 AM", description: "Opening Speech", venue: "Atrium" },
+  { time: "9:00 AM", description: "Opening Speech", venue: "Audi 2" },
   { time: "9:15 AM", description: "Arbitrum Workshop", venue: "Audi 2" },
   { time: "10:45 AM", description: "Intermediate Solidity Workshop ", venue: "Audi 2" }, 
   { time: "12:15 PM", description: "Lunch", venue: "Cafeteria" },
