@@ -17,8 +17,7 @@ const agendaItems = [
   { time: "3:30 PM", description: "Web3 Developer Job Sharing Panel", venue: "Audi 2" }, 
   { time: "4:15 PM", description: "Dune Analytics Workshop", venue: "Audi 2" },
   { time: "5:15 PM", description: "Partner Workshop", venue: "Audi 2" },
-  { time: "6:00 PM", description: "Web3 Job Sharing Session", venue: "Audi 2" },
-  { time: "6:45 PM", description: "Dinner + Networking", venue: "Cafeteria" },
+  { time: "6:00 PM", description: "Dinner + Networking", venue: "Cafeteria" },
 ];
 
 // Agenda.jsx

@@ -13,7 +13,8 @@ const venueSponsors: PartnerLogosProps = [
 ];
 
 const communityPartners: PartnerLogosProps = [
-  { url: "https://www.myunilah.com", src:"unilah.png" }
+  { url: "https://www.myunilah.com", src:"unilah.png" },
+  { url: "https://ethereumsingapore.com", src: "ETHSG.png" },
 ];
 
 const mediaPartners: PartnerLogosProps = [];
