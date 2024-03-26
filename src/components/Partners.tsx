@@ -17,8 +17,6 @@ const communityPartners: PartnerLogosProps = [
   { url: "https://ethereumsingapore.com", src: "ETHSG.png" },
 ];
 
-const mediaPartners: PartnerLogosProps = [];
-
 const supportedByLogos: PartnerLogosProps = [
   { url: "https://apu-hackthletes.vercel.app/", src: "hackthletes.png"}
   // { url: "https://solana.com", src: "solanaLogo.png" }, //Solana logo to be added once RTD approved
@@ -66,11 +64,6 @@ export default function Partners() {
           <h3 className="text-lg md:text-xl mb-2">Community Partners</h3>
           <div className="border-b-2 border-yellow-500 md:w-full mx-auto mb-4"></div>
           <PartnerLogos logos={communityPartners} />
-        </div>
-        <div className="mb-8">
-          <h3 className="text-lg md:text-xl mb-2">Media Partners</h3>
-          <div className="border-b-2 border-yellow-500 md:w-full mx-auto mb-4"></div>
-          <PartnerLogos logos={mediaPartners} />
         </div>
       <div className="mb-8">
           <h3 className="text-lg md:text-xl mb-2">Supported by</h3>

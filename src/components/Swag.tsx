@@ -17,11 +17,6 @@ const swags = [
     description: "Stickers",
     imageUrl: "/stickers.jpeg", // Update the path to your image
   },
-  {
-    name: "Swag 4",
-    description: "Coming Soon",
-    imageUrl: "/wip.png", // Update the path to your image
-  },
 
   // Add more swag items here
 ];

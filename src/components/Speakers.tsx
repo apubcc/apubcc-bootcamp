@@ -24,16 +24,6 @@ const speakers = [
   //   name: "Henry Lee",
   //   title: "Superteam Malaysia Lead",
   // },
-  {
-    imageSrc: "placeholderPerson.jpg",
-    name: "Name",
-    title: "Role",
-  },
-  {
-    imageSrc: "placeholderPerson.jpg",
-    name: "Name",
-    title: "Role",
-  },
 ];
 
 // SpeakerCard.tsx
@@ -47,7 +37,7 @@ const SpeakerCard = ({
   title: string;
 }) => {
   return (
-    <div className="p-4 w-1/2 md:w-1/4 flex flex-col items-center space-y-4">
+    <div className="p-4 md:px-8 w-1/2 md:w-1/4 flex flex-col items-center space-y-4"> {/* Adjusted padding */}
       <div
         className="md:h-72 md:w-72 h-36 w-36 bg-cover rounded-full overflow-hidden object-cover"
         style={{ backgroundImage: `url('${imageSrc}')` }}
@@ -55,13 +45,15 @@ const SpeakerCard = ({
       >
         {/* Image will be displayed here */}
       </div>
-      <div className="w-72 border-gray-400 bg-white rounded p-4 flex flex-col items-center text-center"> {/* Added text-center class */}
-        <p className="text-sm text-gray-600">{title}</p>
-        <div className="text-gray-900 font-bold text-lg mb-2">{name}</div>
+      <div className="border-gray-400 bg-white rounded p-4 flex flex-col items-center text-center"> 
+        <p className="text-sm text-gray-600 mb-2">{title}</p> 
+        <div className="text-gray-900 font-bold text-lg mb-2">{name}</div> 
       </div>
     </div>
   );
-};
+}
+
+
 // Speakers.tsx
 export default function Speakers() {
   return (
