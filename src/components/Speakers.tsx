@@ -35,7 +35,7 @@ const speakers = [
     title: "Blockchain Enthusiast",
   },
   {
-    imageSrc: "kerf.jpeg",
+    imageSrc: "kerf.jpg",
     name: "Kerf Chang",
     title: "Particle Network",
   },
