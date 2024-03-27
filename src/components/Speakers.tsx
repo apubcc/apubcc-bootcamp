@@ -19,6 +19,21 @@ const speakers = [
     name: "Tan Hao Xiang",
     title: "Arbitrum Ambassador",
   },
+  {
+    imageSrc: "alvin.jpeg",
+    name: "Alvin Yap",
+    title: "Founder of Definitive Web3 Sdn Bhd",
+  },
+  {
+    imageSrc: "daryl.jpeg",
+    name: "Daryl Tan",
+    title: "Pendle Finance",
+  },
+  {
+    imageSrc: "nazreen.jpeg",
+    name: "Nazreen Mohamad",
+    title: "Blockchain Enthusiast",
+  },
   // {
   //   imageSrc: "henry.jpg",
   //   name: "Henry Lee",

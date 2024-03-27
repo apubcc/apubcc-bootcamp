@@ -17,8 +17,11 @@ const swags = [
     description: "Stickers",
     imageUrl: "/stickers.jpeg", // Update the path to your image
   },
-
-  // Add more swag items here
+  {
+    name: "Swag 4",
+    description: "Participant Pass",
+    imageUrl: "/pass.jpg", // Update the path to your image
+  },
 ];
 
 export default function Swag() {
