@@ -87,7 +87,7 @@ export default function Home() {
           </h1>
           <p className="text-xl md:text-2xl mb-5">When? 📆</p>
           <p className="text-lg md:text-xl mb-10 space-mono-regular">
-            March 30, 2024 from 9:00 AM to 7:00 PM
+            March 30, 2024 from 8:00 AM to 7:00 PM
           </p>
           <p className="text-xl md:text-2xl mb-5">Where? 📍</p>
           <p className="text-lg md:text-xl mb-10 space-mono-regular">
@@ -118,7 +118,7 @@ export default function Home() {
               }`}
             >
               {/* a coding like text */}
-              REGISTER
+              REGISTRATION CLOSED
             </PopupButton>
           </div>
         </div>

@@ -37,7 +37,7 @@ const speakers = [
   {
     imageSrc: "libevm.jpg",
     name: "Lib Evm",
-    title: "Engineer@crypticwoods_ and Dev-Rel@Mantle",
+    title: "Engineer@crypticwoods_ & Dev-Rel@Mantle",
   },
   {
     imageSrc: "nazreen.jpeg",
