@@ -30,11 +30,6 @@ const speakers = [
     title: "Pendle Finance",
   },
   {
-    imageSrc: "nazreen.jpeg",
-    name: "Nazreen Mohamad",
-    title: "Blockchain Enthusiast / Developer",
-  },
-  {
     imageSrc: "kerf.jpg",
     name: "Kerf Chang",
     title: "Particle Network",
@@ -42,7 +37,17 @@ const speakers = [
   {
     imageSrc: "libevm.jpg",
     name: "Lib Evm",
-    title: "Engineer@crypticwoods_ and Dev-Rel @ Mantle",
+    title: "Engineer@crypticwoods_ and Dev-Rel@Mantle",
+  },
+  {
+    imageSrc: "nazreen.jpeg",
+    name: "Nazreen Mohamad",
+    title: "Blockchain Enthusiast / Developer",
+  },
+  {
+    imageSrc: "sr.jpeg",
+    name: "Shuenrui",
+    title: "Research Analyst at EVMINK",
   },
 ];
 
