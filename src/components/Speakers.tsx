@@ -47,7 +47,7 @@ const speakers = [
   {
     imageSrc: "libevm.jpg",
     name: "Lib Evm",
-    title: "DevRel @ Mantle",
+    title: "Engineer@crypticwoods_ and Dev-Rel @ Mantle",
   },
 ];
 
