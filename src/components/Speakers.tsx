@@ -32,12 +32,17 @@ const speakers = [
   {
     imageSrc: "nazreen.jpeg",
     name: "Nazreen Mohamad",
-    title: "Blockchain Enthusiast",
+    title: "Blockchain Enthusiast / Developer",
   },
   {
     imageSrc: "kerf.jpg",
     name: "Kerf Chang",
     title: "Particle Network",
+  },
+  {
+    imageSrc: "roman1.jpg",
+    name: "Roman Zinovyev",
+    title: "DeFi Researcher",
   },
   // {
   //   imageSrc: "henry.jpg",

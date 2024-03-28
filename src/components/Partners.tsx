@@ -15,6 +15,7 @@ const venueSponsors: PartnerLogosProps = [
 const communityPartners: PartnerLogosProps = [
   { url: "https://www.myunilah.com", src:"unilah.png" },
   { url: "https://ethereumsingapore.com", src: "ETHSG.png" },
+  { url: "https://talentweb3.co/", src: "talent@web3.png" },
 ];
 
 const supportedByLogos: PartnerLogosProps = [
