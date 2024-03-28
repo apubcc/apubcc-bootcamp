@@ -43,12 +43,12 @@ const speakers = [
     imageSrc: "roman1.jpg",
     name: "Roman Zinovyev",
     title: "DeFi Researcher",
+  },  
+  {
+    imageSrc: "libevm.jpg",
+    name: "Lib Evm",
+    title: "DevRel @ Mantle",
   },
-  // {
-  //   imageSrc: "henry.jpg",
-  //   name: "Henry Lee",
-  //   title: "Superteam Malaysia Lead",
-  // },
 ];
 
 // SpeakerCard.tsx
