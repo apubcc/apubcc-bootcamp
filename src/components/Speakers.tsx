@@ -38,12 +38,7 @@ const speakers = [
     imageSrc: "kerf.jpg",
     name: "Kerf Chang",
     title: "Particle Network",
-  },
-  {
-    imageSrc: "roman1.jpg",
-    name: "Roman Zinovyev",
-    title: "DeFi Researcher",
-  },  
+  }, 
   {
     imageSrc: "libevm.jpg",
     name: "Lib Evm",
