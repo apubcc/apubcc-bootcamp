@@ -15,6 +15,11 @@ const speakers = [
     title: "Arbitrum Ambassador & APU Hackthletes President",
   },
   {
+    imageSrc: "yc.jpg",
+    name: "Cheong Yee Chian",
+    title: "APU Hackthletes Vice President",
+  },
+  {
     imageSrc: "haoxiang.png",
     name: "Tan Hao Xiang",
     title: "Arbitrum Ambassador",
