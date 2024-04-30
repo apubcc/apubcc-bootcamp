@@ -3,23 +3,23 @@ import React from "react";
 type PartnerLogosProps = { url: string; src: string }[];
 
 const mainSponsors: PartnerLogosProps = [
-  { url: "https://arbitrum.io", src: "AF.png"},
+  // { url: "https://arbitrum.io", src: "AF.png"},
   { url: "https://esp.ethereum.foundation/devcon-grants", src: "RTD.png"},
   // { url: "https://twitter.com/SuperteamMY", src: "superteam.png" },
-  { url: "https://polygon.technology/", src:"polygon white.png" }
+  // { url: "https://polygon.technology/", src:"polygon white.png" }
 ];
 const venueSponsors: PartnerLogosProps = [
   { url: "https://apu.edu.my", src: "/APU.png" },
 ];
 
 const communityPartners: PartnerLogosProps = [
-  { url: "https://www.myunilah.com", src:"unilah.png" },
-  { url: "https://ethereumsingapore.com", src: "ETHSG.png" },
-  { url: "https://talentweb3.co/", src: "talent@web3.png" },
+  // { url: "https://www.myunilah.com", src:"unilah.png" },
+  // { url: "https://ethereumsingapore.com", src: "ETHSG.png" },
+  // { url: "https://talentweb3.co/", src: "talent@web3.png" },
 ];
 
 const supportedByLogos: PartnerLogosProps = [
-  { url: "https://apu-hackthletes.vercel.app/", src: "hackthletes.png"}
+  // { url: "https://apu-hackthletes.vercel.app/", src: "hackthletes.png"}
   // { url: "https://solana.com", src: "solanaLogo.png" }, //Solana logo to be added once RTD approved
 ];
 

@@ -4,23 +4,23 @@ import Image from "next/image";
 const swags = [
   {
     name: "Swag 1",
-    description: "Bucket Hat",
-    imageUrl: "/hat.jpeg", // Update the path to your image
+    description: "Socks",
+    imageUrl: "/comingSoon.png", // Update the path to your image
   },
   {
     name: "Swag 2",
     description: "Lanyard",
-    imageUrl: "/lanyard.jpeg", // Update the path to your image
+    imageUrl: "/comingSoon.png", // Update the path to your image
   },
   {
     name: "Swag 3",
     description: "Stickers",
-    imageUrl: "/stickers.jpeg", // Update the path to your image
+    imageUrl: "/comingSoon.png", // Update the path to your image
   },
   {
     name: "Swag 4",
     description: "Participant Pass",
-    imageUrl: "/pass.jpg", // Update the path to your image
+    imageUrl: "/comingSoon.png", // Update the path to your image
   },
 ];
 

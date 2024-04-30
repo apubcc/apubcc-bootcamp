@@ -11,49 +11,15 @@ type Speaker = {
 const speakers = [
   {
     imageSrc: "ben.jpg",
-    name: "Benjamin Tan",
-    title: "Arbitrum Ambassador & APU Hackthletes President",
+    name: "Coming soon...",
+    title: "Coming soon ...",
   },
   {
     imageSrc: "yc.jpg",
-    name: "Cheong Yee Chian",
-    title: "APU Hackthletes Vice President",
+    name: "Coming soon...",
+    title: "Coming soon...",
   },
-  {
-    imageSrc: "haoxiang.png",
-    name: "Tan Hao Xiang",
-    title: "Arbitrum Ambassador",
-  },
-  {
-    imageSrc: "alvin.jpeg",
-    name: "Alvin Yap",
-    title: "Founder of Definitive Web3 Sdn Bhd",
-  },
-  {
-    imageSrc: "daryl.jpeg",
-    name: "Daryl Tan",
-    title: "Pendle Finance",
-  },
-  {
-    imageSrc: "kerf.jpg",
-    name: "Kerf Chang",
-    title: "Particle Network",
-  }, 
-  {
-    imageSrc: "libevm.jpg",
-    name: "Lib Evm",
-    title: "Engineer@crypticwoods_ & Dev-Rel@Mantle",
-  },
-  {
-    imageSrc: "nazreen.jpeg",
-    name: "Nazreen Mohamad",
-    title: "Blockchain Enthusiast / Developer",
-  },
-  {
-    imageSrc: "sr.jpeg",
-    name: "Shuenrui",
-    title: "Research Analyst at EVMINK",
-  },
+
 ];
 
 // SpeakerCard.tsx

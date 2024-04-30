@@ -10,14 +10,12 @@ const agendaItems = [
     venue: "Cafeteria",
   },
   { time: "9:00 AM", description: "Opening Speech", venue: "Audi 2" },
-  { time: "9:15 AM", description: "Arbitrum Workshop", venue: "Audi 2" },
-  { time: "10:45 AM", description: "Intermediate Solidity Workshop ", venue: "Audi 2" }, 
-  { time: "12:15 PM", description: "Lunch", venue: "Cafeteria" },
-  { time: "1:30 PM", description: "What is the 'Unknown'?", venue: "Audi 2" },
-  { time: "3:30 PM", description: "Web3 Developer Job Sharing Panel", venue: "Audi 2" }, 
-  { time: "4:15 PM", description: "Dune Analytics Workshop", venue: "Audi 2" },
-  { time: "5:15 PM", description: "Partner Workshop", venue: "Audi 2" },
-  { time: "6:00 PM", description: "Dinner + Networking", venue: "Cafeteria" },
+  { time: "9:15 AM", description: "Smart Contract Workshop", venue: "Audi 2" },
+  { time: "11:45 AM", description: "Lunch", venue: "Cafeteria" }, 
+  { time: "12:45 PM", description: "Frontend UI Workshop", venue: "Audi 2" },
+  { time: "3:15 PM", description: "Integration Smart Contract with your UI", venue: "Audi 2" }, 
+  { time: "5:45 PM", description: "Jobs in Web3", venue: "Audi 2" },
+  { time: "6:45 PM", description: "Dinner + Networking", venue: "Cafeteria" },
 ];
 
 // Agenda.jsx

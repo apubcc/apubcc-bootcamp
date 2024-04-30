@@ -17,7 +17,7 @@ export default function Welcome() {
             (again)
           </a>
         </sup>{" "}
-        to APUBCC’s second bootcamp under the{" "}
+        to APUBCC’s third bootcamp under the{" "}
         <a
           className="text-eventColor"
           href="https://devcon.org/en/"
@@ -29,16 +29,15 @@ export default function Welcome() {
         initiative!
       </h2>
       <p className="text-sm md:text-xl mb-10 space-mono-regular text-justify">
-        Enjoyed our first bootcamp? We’re back with another exciting bootcamp
-        filled with interactive, hands-on activities that will take your Web3
+        Enjoyed our first & second bootcamp? We’re back with another exciting bootcamp
+        filled with interactive, and more hands-on activities that will take your Web3
         skills from zero to hero.
       </p>
       <h3 className="text-lg md:text-2xl mb-3 space-mono-bold">Why should I join?</h3>
       <ul className="text-sm md:text-xl text-justify list-disc list-inside space-mono-regular">
-        <li className="pt-2 mb-3">Interactive Workshops: Even more hands-on!</li>
+        <li className="pt-2 mb-3">In this bootcamp series, We will let you build a complete Web3 project!</li>
         <li className="pt-2 mb-3">
-          Web3 Developer Job Panel: Learn about the latest job opportunities in
-          the Web3 space.
+          Job in Web 3: Grab a chance to connect with web3 company and get hired.
         </li>
         <li className="pt-2">
           Networking: Meet and connect with like-minded individuals.

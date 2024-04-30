@@ -81,13 +81,13 @@ export default function Home() {
     <main className="p-10 text-white flex items-center justify-center z-10">
       <div className="container mx-aut flex flex-wrap items-center lg:justify-between">
         <div className="w-full lg:w-1/2 px-4 mb-8 lg:mb-0 space-mono-bold">
-          <p className="text-lg md:text-2xl mb-2">WEB3 DEVELOPER BOOTCAMP:</p>
+          <p className="text-lg md:text-2xl mb-2">WEB3 DEVELOPER BOOTCAMP #3:</p>
           <h1 className="text-3xl md:text-5xl font-bold mb-10">
-            CODING THE UNKNOWN
+            MASTERING THE KNOWN
           </h1>
           <p className="text-xl md:text-2xl mb-5">When? 📆</p>
           <p className="text-lg md:text-xl mb-10 space-mono-regular">
-            March 30, 2024 from 8:00 AM to 7:00 PM
+            May 25th, 2024 from 8:00 AM to 7:00 PM
           </p>
           <p className="text-xl md:text-2xl mb-5">Where? 📍</p>
           <p className="text-lg md:text-xl mb-10 space-mono-regular">
@@ -118,7 +118,7 @@ export default function Home() {
               }`}
             >
               {/* a coding like text */}
-              REGISTRATION CLOSED
+              👉🏻REGISTER NOW!👈🏻
             </PopupButton>
           </div>
         </div>
