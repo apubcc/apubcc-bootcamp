@@ -9,16 +9,16 @@ type Speaker = {
 
 //  list of speakers
 const speakers = [
-  // {
-  //   imageSrc: "ben.jpg",
-  //   name: "Coming soon...",
-  //   title: "Coming soon ...",
-  // },
-  // {
-  //   imageSrc: "yc.jpg",
-  //   name: "Coming soon...",
-  //   title: "Coming soon...",
-  // },
+  {
+    imageSrc: "",
+    name: "",
+    title: "",
+  },
+  {
+    imageSrc: "",
+    name: "",
+    title: "",
+  },
 ];
 
 // SpeakerCard.tsx

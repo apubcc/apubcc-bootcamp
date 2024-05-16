@@ -81,7 +81,9 @@ export default function Home() {
     <main className="p-10 text-white flex items-center justify-center z-10">
       <div className="container mx-aut flex flex-wrap items-center lg:justify-between">
         <div className="w-full lg:w-1/2 px-4 mb-8 lg:mb-0 space-mono-bold">
-          <p className="text-lg md:text-2xl mb-2">WEB3 DEVELOPER BOOTCAMP #3:</p>
+          <p className="text-lg md:text-2xl mb-2">
+            WEB3 DEVELOPER BOOTCAMP #3:
+          </p>
           <h1 className="text-3xl md:text-5xl font-bold mb-10">
             MASTERING THE KNOWN
           </h1>
@@ -123,7 +125,10 @@ export default function Home() {
           </div>
         </div>
         <div className="w-full lg:w-1/2 flex">
-          <div className="image-border" style={{borderRadius: '10px', overflow: 'hidden'}}>
+          <div
+            className="image-border"
+            style={{ borderRadius: "10px", overflow: "hidden" }}
+          >
             <Image
               src="/hero.jpg"
               alt="Event Image"
