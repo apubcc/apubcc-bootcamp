@@ -4,9 +4,10 @@ type PartnerLogosProps = { url: string; src: string }[];
 
 const mainSponsors: PartnerLogosProps = [
   // { url: "https://arbitrum.io", src: "AF.png"},
-  { url: "https://esp.ethereum.foundation/devcon-grants", src: "RTD.png"},
+  { url: "https://esp.ethereum.foundation/devcon-grants", src: "RTD.png" },
   // { url: "https://twitter.com/SuperteamMY", src: "superteam.png" },
   // { url: "https://polygon.technology/", src:"polygon white.png" }
+  { url: "https://voyager.online/", src: "Voyager.png" },
 ];
 const venueSponsors: PartnerLogosProps = [
   { url: "https://apu.edu.my", src: "/APU.png" },
@@ -37,7 +38,7 @@ const PartnerLogos = ({ logos }: { logos: { url: string; src: string }[] }) => (
         <img
           src={logo.src}
           alt={`Partner logo ${index + 1}`}
-          className="h-8 md:h-16 transition-transform duration-300 hover:scale-105" 
+          className="h-8 md:h-16 transition-transform duration-300 hover:scale-105"
         />
       </a>
     ))}
@@ -61,16 +62,16 @@ export default function Partners() {
           <div className="border-b-2 border-yellow-500 md:w-full w-full mx-auto mb-4"></div>
           <PartnerLogos logos={venueSponsors} />
         </div>
-        <div className="mb-8">
+        {/* <div className="mb-8">
           <h3 className="text-lg md:text-xl mb-2">Community Partners</h3>
           <div className="border-b-2 border-yellow-500 md:w-full mx-auto mb-4"></div>
           <PartnerLogos logos={communityPartners} />
         </div>
-      <div className="mb-8">
+        <div className="mb-8">
           <h3 className="text-lg md:text-xl mb-2">Supported by</h3>
           <div className="border-b-2 border-yellow-500 md:w-full mx-auto mb-4"></div>
-        <PartnerLogos logos={supportedByLogos} />
-      </div>
+          <PartnerLogos logos={supportedByLogos} />
+        </div> */}
       </section>
     </div>
   );
