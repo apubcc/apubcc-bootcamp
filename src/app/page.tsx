@@ -120,7 +120,7 @@ export default function Home() {
               }`}
             >
               {/* a coding like text */}
-              👉🏻REGISTER NOW!👈🏻
+              REGISTER NOW!
             </PopupButton>
           </div>
         </div>

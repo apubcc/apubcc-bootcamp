@@ -16,13 +16,26 @@ const agendaItems = [
     venue: "Audi 2",
   },
   { time: "12:15 PM", description: "Lunch", venue: "Cafeteria" },
-  { time: "1:15 PM", description: "Starknet Technical Workshop", venue: "Audi 2" },
   {
-    time: "4:25 PM",
+    time: "1:15 PM",
+    description: "Starknet Technical Workshop",
+    venue: "Audi 2",
+  },
+  {
+    time: "3:15 PM",
     description: "Break",
     venue: "Audi 2",
   },
-  { time: "4:35 PM", description: "Starknet Group Activity", venue: "Audi 2" },
+  {
+    time: "3:25 PM",
+    description: "Starknet Technical Workshop (Continue)",
+    venue: "Audi 2",
+  },
+  {
+    time: "4:35 PM",
+    description: "Starknet Group Activity",
+    venue: "Audi 2",
+  },
   { time: "6:35 PM", description: "Dinner + Networking", venue: "Cafeteria" },
 ];
 

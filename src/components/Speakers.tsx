@@ -10,13 +10,13 @@ type Speaker = {
 //  list of speakers
 const speakers = [
   {
-    imageSrc: "",
-    name: "",
+    imageSrc: "wenkang.jpeg",
+    name: "Wen Kang",
     title: "",
   },
   {
-    imageSrc: "",
-    name: "",
+    imageSrc: "placeholderPerson.jpg",
+    name: "Chee Chyuan",
     title: "",
   },
 ];
