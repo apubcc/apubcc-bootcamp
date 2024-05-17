@@ -4,8 +4,8 @@ import Image from "next/image";
 const swags = [
   {
     name: "Swag 1",
-    description: "Socks",
-    imageUrl: "/comingSoon.png", // Update the path to your image
+    description: "Tote Bag",
+    imageUrl: "/totebag.png", // Update the path to your image
   },
   {
     name: "Swag 2",
@@ -30,7 +30,7 @@ const swags = [
   {
     name: "Swag 4",
     description: "Participant Pass",
-    imageUrl: "/comingSoon.png", // Update the path to your image
+    imageUrl: "/participantPass.png", // Update the path to your image
   },
 ];
 
@@ -42,7 +42,9 @@ export default function Swag() {
         className="text-center text-lg md:text-2xl font-bold space-mono-bold"
       >
         Merchandise{" "}
-        <span className="italic space-mono-bold-italic">(&quot;Swags&quot;)</span>
+        <span className="italic space-mono-bold-italic">
+          (&quot;Swags&quot;)
+        </span>
       </h2>
       <div className="flex justify-center items-center flex-wrap md:flex-wrap md:w-full">
         {swags.map((item, index) => (
@@ -70,4 +72,3 @@ export default function Swag() {
     </>
   );
 }
-
