@@ -12,12 +12,12 @@ const speakers = [
   {
     imageSrc: "wenkang.jpeg",
     name: "Wen Kang",
-    title: "",
+    title: "Software Engineer",
   },
   {
-    imageSrc: "placeholderPerson.jpg",
+    imageSrc: "cheechyuan.jpeg",
     name: "Chee Chyuan",
-    title: "",
+    title: "Software Engineer",
   },
 ];
 
