@@ -2,51 +2,45 @@ import React from "react";
 import Image from "next/image";
 
 const swags = [
-  {
-    name: "Swag 1",
-    description: "Tote Bag",
-    imageUrl: "/totebag.png", // Update the path to your image
-  },
-  {
-    name: "Swag 2",
-    description: "Lanyard",
-    imageUrl: "/Lanyard.png", // Update the path to your image
-  },
-  {
-    name: "Swag 3",
-    description: "Sticker 1",
-    imageUrl: "/Sticker1.png", // Update the path to your image
-  },
-  {
-    name: "Swag 4",
-    description: "Sticker 2",
-    imageUrl: "/Sticker2.png", // Update the path to your image
-  },
-  {
-    name: "Swag 5",
-    description: "Sticker 3",
-    imageUrl: "/Sticker3.png", // Update the path to your image
-  },
-  {
-    name: "Swag 4",
-    description: "Participant Pass",
-    imageUrl: "/participantPass.png", // Update the path to your image
-  },
+	{
+		name: "Swag 1",
+		description: "Tote Bag",
+		imageUrl: "/totebag.png", // Update the path to your image
+	},
+	{
+		name: "Swag 2",
+		description: "Lanyard",
+		imageUrl: "/Lanyard.png", // Update the path to your image
+	},
+	{
+		name: "Swag 3",
+		description: "Sticker 1",
+		imageUrl: "/Sticker1.png", // Update the path to your image
+	},
+	{
+		name: "Swag 4",
+		description: "Sticker 2",
+		imageUrl: "/Sticker2.png", // Update the path to your image
+	},
+	{
+		name: "Swag 5",
+		description: "Sticker 3",
+		imageUrl: "/Sticker3.png", // Update the path to your image
+	},
+	{
+		name: "Swag 4",
+		description: "Participant Pass",
+		imageUrl: "/participantPass.png", // Update the path to your image
+	},
 ];
 
 export default function Swag() {
-  return (
-    <>
-      <h2
-        id="swag"
-        className="text-center text-lg md:text-2xl font-bold space-mono-bold"
-      >
-        Merchandise{" "}
-        <span className="italic space-mono-bold-italic">
-          (&quot;Swags&quot;)
-        </span>
-      </h2>
-      <div className="flex justify-center items-center flex-wrap md:flex-wrap md:w-full">
+	return (
+		<>
+			<h2 id='swag' className='text-center text-lg md:text-2xl font-bold space-mono-bold'>
+				Merchandise <span className='italic space-mono-bold-italic'>(&quot;Swags&quot;)</span>
+			</h2>
+			{/* <div className="flex justify-center items-center flex-wrap md:flex-wrap md:w-full">
         {swags.map((item, index) => (
           <div
             key={index}
@@ -68,7 +62,7 @@ export default function Swag() {
             <p className="text-sm text-white text-center">{item.description}</p>
           </div>
         ))}
-      </div>
-    </>
-  );
+      </div> */}
+		</>
+	);
 }

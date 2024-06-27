@@ -7,148 +7,132 @@ import { Welcome, Speakers, Agenda, Swag, FAQ, Partners } from "@/components";
 import { PopupButton } from "@typeform/embed-react";
 
 export default function Home() {
-  const [typewriterIndex, setTypewriterIndex] = useState(0);
-  const [typewriterText, setTypewriterText] = useState("");
-  const [isActive, setIsActive] = useState(false);
+	const [typewriterIndex, setTypewriterIndex] = useState(0);
+	const [typewriterText, setTypewriterText] = useState("");
+	const [isActive, setIsActive] = useState(false);
 
-  const sentences = [
-    "pragma solidity ^join the bootcamp;",
-    "learn to build smart contracts",
-    "explore web3 development",
-    "connect with industry experts",
-    "get insights on web3 developer jobs",
-    "build your blockchain portfolio",
-  ];
+	const sentences = [
+		"pragma solidity ^join the bootcamp;",
+		"learn to build smart contracts",
+		"explore web3 development",
+		"connect with industry experts",
+		"get insights on web3 developer jobs",
+		"build your blockchain portfolio",
+	];
 
-  useEffect(() => {
-    let currentIndex = -1; // Start from -1 because we increment at the beginning of the interval
-    let currentSentence = sentences[typewriterIndex];
-    let typewriterInterval: NodeJS.Timeout;
+	useEffect(() => {
+		let currentIndex = -1; // Start from -1 because we increment at the beginning of the interval
+		let currentSentence = sentences[typewriterIndex];
+		let typewriterInterval: NodeJS.Timeout;
 
-    const startTyping = () => {
-      typewriterInterval = setInterval(() => {
-        currentIndex++;
-        if (currentIndex < currentSentence.length) {
-          setTypewriterText(
-            (prevText) => prevText + currentSentence[currentIndex]
-          );
-        } else {
-          clearInterval(typewriterInterval); // Clear the interval when the current sentence is completed
-          setTimeout(() => {
-            setTypewriterText(""); // Reset the text after the delay
-            setTypewriterIndex(
-              (prevIndex) => (prevIndex + 1) % sentences.length
-            ); // Move to the next sentence after the delay
-          }, 1000); // Delay of 2 seconds before moving to the next sentence
-          currentIndex = -1; // Reset index for the next sentence
-        }
-      }, 100);
-    };
+		const startTyping = () => {
+			typewriterInterval = setInterval(() => {
+				currentIndex++;
+				if (currentIndex < currentSentence.length) {
+					setTypewriterText((prevText) => prevText + currentSentence[currentIndex]);
+				} else {
+					clearInterval(typewriterInterval); // Clear the interval when the current sentence is completed
+					setTimeout(() => {
+						setTypewriterText(""); // Reset the text after the delay
+						setTypewriterIndex((prevIndex) => (prevIndex + 1) % sentences.length); // Move to the next sentence after the delay
+					}, 1000); // Delay of 2 seconds before moving to the next sentence
+					currentIndex = -1; // Reset index for the next sentence
+				}
+			}, 100);
+		};
 
-    startTyping(); // Start the typewriter effect
+		startTyping(); // Start the typewriter effect
 
-    return () => {
-      clearInterval(typewriterInterval); // Clear the interval on unmount or when the component re-renders
-    };
-  }, [typewriterIndex]);
+		return () => {
+			clearInterval(typewriterInterval); // Clear the interval on unmount or when the component re-renders
+		};
+	}, [typewriterIndex]);
 
-  useEffect(() => {
-    const dividerContent =
-      "Smart Contracts • Ethereum • Consensus • Decentralized • Ledger • Cryptography • Tokenization • Web3 • DApps • NFT • Mining • Staking • DAO • DeFi • IPFS • Oracles • Interoperability • Scaling • Layer 2 • Gas • Fork • 51% Attack • Solidity • ERC-20 • ERC-721 • EVM • zk-SNARKs • zk-STARKs • Rollups";
-    const contentArray = dividerContent.split(" • ");
-    contentArray.sort(() => 0.5 - Math.random());
-    const randomizedContent = contentArray.join(" • ");
+	useEffect(() => {
+		const dividerContent =
+			"Smart Contracts • Ethereum • Consensus • Decentralized • Ledger • Cryptography • Tokenization • Web3 • DApps • NFT • Mining • Staking • DAO • DeFi • IPFS • Oracles • Interoperability • Scaling • Layer 2 • Gas • Fork • 51% Attack • Solidity • ERC-20 • ERC-721 • EVM • zk-SNARKs • zk-STARKs • Rollups";
+		const contentArray = dividerContent.split(" • ");
+		contentArray.sort(() => 0.5 - Math.random());
+		const randomizedContent = contentArray.join(" • ");
 
-    // Select all .section-divider elements
-    const sectionDividers = document.querySelectorAll(".section-divider");
+		// Select all .section-divider elements
+		const sectionDividers = document.querySelectorAll(".section-divider");
 
-    // Iterate through each .section-divider element and set its data-content attribute
-    sectionDividers.forEach((divider) => {
-      divider.setAttribute("data-content", randomizedContent);
-    });
-  }, []);
+		// Iterate through each .section-divider element and set its data-content attribute
+		sectionDividers.forEach((divider) => {
+			divider.setAttribute("data-content", randomizedContent);
+		});
+	}, []);
 
-  const handleRegisterClick = () => {
-    setIsActive(true); // Activate the button's animation
-    setTimeout(() => setIsActive(false), 500); // Reset the state after the animation duration
-    console.log("Navigating to event page...");
-    <PopupButton id="<form-id>" style={{ fontSize: 20 }} className="my-button">
-      click to open form in popup
-    </PopupButton>;
-  };
+	const handleRegisterClick = () => {
+		setIsActive(true); // Activate the button's animation
+		setTimeout(() => setIsActive(false), 500); // Reset the state after the animation duration
+		console.log("Navigating to event page...");
+		<PopupButton id='<form-id>' style={{ fontSize: 20 }} className='my-button'>
+			click to open form in popup
+		</PopupButton>;
+	};
 
-  return (
-    <main className="p-10 text-white flex items-center justify-center z-10">
-      <div className="container mx-aut flex flex-wrap items-center lg:justify-between">
-        <div className="w-full lg:w-1/2 px-4 mb-8 lg:mb-0 space-mono-bold">
-          <p className="text-lg md:text-2xl mb-2">
-            WEB3 DEVELOPER BOOTCAMP #3:
-          </p>
-          <h1 className="text-3xl md:text-5xl font-bold mb-10">
-            MASTERING THE KNOWN
-          </h1>
-          <p className="text-xl md:text-2xl mb-5">When? 📆</p>
-          <p className="text-lg md:text-xl mb-10 space-mono-regular">
-            May 25th, 2024 from 8:00 AM to 7:00 PM
-          </p>
-          <p className="text-xl md:text-2xl mb-5">Where? 📍</p>
-          <p className="text-lg md:text-xl mb-10 space-mono-regular">
-            Asia Pacific University of Technology & Innovation
-            <sup>
-              <a
-                href="https://maps.app.goo.gl/NgbD3gTB2pQQbTQQ7"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-eventColor"
-              >
-                {" "}
-                (maps)
-              </a>
-            </sup>
-          </p>
-          {/* Typewriter text container with fixed height */}
-          <div className="flex-row items-center typewriter-container">
-            <p className="text-lg md:text-xl space-mono-regular typewriter-text mb-10 md:mb-5 ">
-              {typewriterText}
-            </p>
-            <PopupButton
-              id="LxMazF0v"
-              trackingProperties={{ source: "bootcampWebsite" }}
-              style={{ fontSize: 20 }}
-              className={`button-primary space-mono-regular text-lg md:text-xl ${
-                isActive ? "active" : ""
-              }`}
-            >
-              {/* a coding like text */}
-              REGISTER NOW!
-            </PopupButton>
-          </div>
-        </div>
-        <div className="w-full lg:w-1/2 flex">
-          <div
-            className="image-border"
-            style={{ borderRadius: "10px", overflow: "hidden" }}
-          >
-            <Image
-              src="/hero.jpg"
-              alt="Event Image"
-              width={1000}
-              height={1000}
-            />
-          </div>
-        </div>
-        <Welcome />
-        <div className="section-divider" w-full></div>
-        <Agenda />
-        <div className="section-divider" w-full></div>
-        <Speakers />
-        <div className="section-divider" w-full></div>
-        <Swag />
-        <div className="section-divider" w-full></div>
-        <Partners />
-        <div className="section-divider" w-full></div>
-        <FAQ />
-      </div>
-    </main>
-  );
+	return (
+		<main className='p-10 text-white flex items-center justify-center z-10'>
+			<div className='container mx-aut flex flex-wrap items-center lg:justify-between'>
+				<div className='w-full lg:w-1/2 px-4 mb-8 lg:mb-0 space-mono-bold'>
+					<p className='text-lg md:text-2xl mb-2'>Web3Preneurship101:</p>
+					<h1 className='text-3xl md:text-5xl font-bold mb-10'>CREATING VALUE</h1>
+					<p className='text-xl md:text-2xl mb-5'>When? 📆</p>
+					<p className='text-lg md:text-xl mb-10 space-mono-regular'>
+						August 10th, 2024 from 9:00 AM to 7:00 PM
+					</p>
+					<p className='text-xl md:text-2xl mb-5'>Where? 📍</p>
+					<p className='text-lg md:text-xl mb-10 space-mono-regular'>
+						Asia Pacific University of Technology & Innovation
+						<sup>
+							<a
+								href='https://maps.app.goo.gl/NgbD3gTB2pQQbTQQ7'
+								target='_blank'
+								rel='noopener noreferrer'
+								className='text-eventColor'
+							>
+								{" "}
+								(maps)
+							</a>
+						</sup>
+					</p>
+					{/* Typewriter text container with fixed height */}
+					<div className='flex-row items-center typewriter-container'>
+						<p className='text-lg md:text-xl space-mono-regular typewriter-text mb-10 md:mb-5 '>
+							{typewriterText}
+						</p>
+						<PopupButton
+							id='sc6y1lQ0'
+							trackingProperties={{ source: "bootcampWebsite" }}
+							style={{ fontSize: 20 }}
+							className={`button-primary space-mono-regular text-lg md:text-xl ${
+								isActive ? "active" : ""
+							}`}
+						>
+							{/* a coding like text */}
+							REGISTER NOW!
+						</PopupButton>
+					</div>
+				</div>
+				<div className='w-full lg:w-1/2 flex'>
+					<div className='image-border' style={{ borderRadius: "10px", overflow: "hidden" }}>
+						<Image src='/hero.jpg' alt='Event Image' width={1000} height={1000} />
+					</div>
+				</div>
+				<Welcome />
+				<div className='section-divider' w-full></div>
+				<Agenda />
+				<div className='section-divider' w-full></div>
+				<Speakers />
+				<div className='section-divider' w-full></div>
+				<Swag />
+				<div className='section-divider' w-full></div>
+				<Partners />
+				<div className='section-divider' w-full></div>
+				<FAQ />
+			</div>
+		</main>
+	);
 }
