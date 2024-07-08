@@ -5,38 +5,40 @@ import React from "react";
 // Sample data taken from the picture provided
 const agendaItems = [
 	{
-		time: "9:00 AM",
+		time: "8:00 AM",
 		description: "Registration + Breakfast",
 		venue: "Cafeteria",
 	},
-	{ time: "10:00 AM", description: "Opening Speech", venue: "Atrium" },
+	{ time: "9:00 AM", description: "Opening Speech", venue: "Audi 2" },
 	{
-		time: "10:15 AM",
-		description: "Intro to L2s and Starknet",
+		time: "9:30 AM",
+		description: "Ice Breaking",
 		venue: "Audi 2",
 	},
-	{ time: "12:15 PM", description: "Lunch", venue: "Cafeteria" },
+	{ time: "10:00 AM", description: "Workshop", venue: "Audi 2" },
 	{
-		time: "1:15 PM",
-		description: "Starknet Technical Workshop",
-		venue: "Audi 2",
-	},
-	{
-		time: "3:15 PM",
-		description: "Break",
+		time: "11:15 AM",
+		description: "Brainstorming",
 		venue: "Audi 2",
 	},
 	{
-		time: "3:25 PM",
-		description: "Starknet Technical Workshop (Continue)",
+		time: "11:45 AM",
+		description: "Lunch",
+		venue: "Cafeteria",
+	},
+	{
+		time: "12:30 PM",
+		description: "Station Game",
 		venue: "Audi 2",
 	},
 	{
-		time: "4:35 PM",
-		description: "Starknet Group Activity",
+		time: "2:30 PM",
+		description: "Brainstorming/Mentor",
 		venue: "Audi 2",
 	},
-	{ time: "6:35 PM", description: "Dinner + Networking", venue: "Cafeteria" },
+	{ time: "3:30 PM", description: "Pitching", venue: "Audi 2" },
+	{ time: "5:00 PM", description: "Prize Pool + Letter Opening", venue: "Audi 2" },
+	{ time: "6:00 PM", description: "Dinner + Networking", venue: "Cafeteria" },
 ];
 
 // Agenda.jsx
@@ -47,7 +49,7 @@ export default function Agenda() {
 				Bootcamp Agenda
 			</h2>
 			<div className='flex flex-col md:flex-row md:flex-wrap gap-2 md:gap-4 justify-start w-full'>
-				{/* {agendaItems.map((item, index) => (
+				{agendaItems.map((item, index) => (
 					<div
 						key={index}
 						className='bg-white p-2 md:p-3 rounded-lg shadow-sm w-full md:w-48 transform transition hover:scale-105 space-mono-regular text-xs md:text-sm text-black'
@@ -64,8 +66,8 @@ export default function Agenda() {
 						<div className='space-mono-bold text-xs md:text-sm mb-1'>{item.time}</div>
 						<div className='text-xs md:text-sm'>{item.description}</div>
 					</div>
-				))} */}
-				<p className='text-xl italic'>Coming Soon -- keep an eye on this space!</p>
+				))}
+				{/* <p className='text-xl italic'>Coming Soon -- keep an eye on this space!</p> */}
 			</div>
 		</>
 	);
