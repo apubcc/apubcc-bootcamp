@@ -36,7 +36,7 @@ export default function Welcome() {
 			<h3 className='text-lg md:text-2xl mb-3 space-mono-bold'>Why should I join?</h3>
 			<ul className='text-sm md:text-xl text-justify list-disc list-inside space-mono-regular'>
 				<li className='pt-2 mb-3'>
-					In this bootcamp series, you will brainstorm IDEAS for your cool WEB3 projects!
+					In this bootcamp series, you will brainstorm IDEAS to BUIDL cool projects!
 				</li>
 				<li className='pt-2 mb-3'>
 					Job in Web 3: Grab a chance to connect with web3 company and get hired.
