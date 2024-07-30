@@ -1,6 +1,6 @@
 import React from "react";
 
-type PartnerLogosProps = { url: string; src: string }[];
+type PartnerLogosProps = { url: string; src: string; mdHeight?: string; height?: string }[];
 
 const mainSponsors: PartnerLogosProps = [
 	// { url: "https://arbitrum.io", src: "AF.png"},
@@ -12,25 +12,37 @@ const mainSponsors: PartnerLogosProps = [
 const venueSponsors: PartnerLogosProps = [{ url: "https://apu.edu.my", src: "/APU.png" }];
 
 const communityPartners: PartnerLogosProps = [
-	{ url: "https://www.starknet.io/", src: "starknet.png" },
-	// { url: "https://ethereumsingapore.com", src: "ETHSG.png" },
-	// { url: "https://talentweb3.co/", src: "talent@web3.png" },
+	{ url: "https://www.myunilah.com/", src: "media_partner/unilah.png" },
 ];
 
 const supportedByLogos: PartnerLogosProps = [
 	// { url: "https://apu-hackthletes.vercel.app/", src: "hackthletes.png"}
 	// { url: "https://solana.com", src: "solanaLogo.png" }, //Solana logo to be added once RTD approved
+	{
+		url: "https://sunwayblockchain.com/en",
+		src: "media_partner/sbcc.png",
+	},
+	{
+		url: "https://www.instagram.com/mumbcs/",
+		src: "media_partner/mumbc.png",
+		mdHeight: "200px",
+		height: "200px",
+	},
 ];
 
 // modify the PartnerLogos to be able to be clicked and open a new tab with the sponsor's website. the website is to be received alongside the URL of image src.
-const PartnerLogos = ({ logos }: { logos: { url: string; src: string }[] }) => (
+const PartnerLogos = ({
+	logos,
+}: {
+	logos: { url: string; src: string; mdHeight?: string; height?: string }[];
+}) => (
 	<div className='flex justify-center items-center flex-wrap mt-2 mb-8'>
 		{logos.map((logo, index) => (
 			<a key={index} href={logo.url} target='_blank' rel='noopener noreferrer' className='m-4'>
 				<img
 					src={logo.src}
 					alt={`Partner logo ${index + 1}`}
-					className='h-8 md:h-16 transition-transform duration-300 hover:scale-105'
+					className={`h-[${logo.height}] w-36 md:h-[${logo.mdHeight}] md:w-52 transition-transform duration-300 hover:scale-105`}
 				/>
 			</a>
 		))}
@@ -55,13 +67,13 @@ export default function Partners() {
 				<div className='mb-8'>
 					<h3 className='text-lg md:text-xl mb-2'>Community Partners</h3>
 					<div className='border-b-2 border-yellow-500 md:w-full mx-auto mb-4'></div>
-					{/* <PartnerLogos logos={communityPartners} /> */}
+					<PartnerLogos logos={communityPartners} />
 				</div>
-				{/* <div className="mb-8">
-          <h3 className="text-lg md:text-xl mb-2">Supported by</h3>
-          <div className="border-b-2 border-yellow-500 md:w-full mx-auto mb-4"></div>
-          <PartnerLogos logos={supportedByLogos} />
-        </div> */}
+				<div className='mb-8'>
+					<h3 className='text-lg md:text-xl mb-2'>Supported by</h3>
+					<div className='border-b-2 border-yellow-500 md:w-full mx-auto mb-4'></div>
+					<PartnerLogos logos={supportedByLogos} />
+				</div>
 			</section>
 		</div>
 	);
