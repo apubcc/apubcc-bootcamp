@@ -122,15 +122,15 @@ export default function Home() {
 					</div>
 				</div>
 				<Welcome />
-				<div className='section-divider' w-full></div>
+				<div className='section-divider'></div>
 				<Agenda />
-				<div className='section-divider' w-full></div>
+				<div className='section-divider'></div>
 				<Speakers />
-				<div className='section-divider' w-full></div>
+				<div className='section-divider'></div>
 				<Swag />
-				<div className='section-divider' w-full></div>
+				<div className='section-divider'></div>
 				<Partners />
-				<div className='section-divider' w-full></div>
+				<div className='section-divider'></div>
 				<FAQ />
 			</div>
 		</main>
