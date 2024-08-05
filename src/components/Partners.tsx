@@ -7,7 +7,7 @@ const mainSponsors: PartnerLogosProps = [
 	{ url: "https://esp.ethereum.foundation/devcon-grants", src: "RTD.png" },
 	// { url: "https://twitter.com/SuperteamMY", src: "superteam.png" },
 	// { url: "https://polygon.technology/", src:"polygon white.png" }
-	{ url: "https://voyager.online/", src: "Voyager.png" },
+	// { url: "https://voyager.online/", src: "Voyager.png" },
 ];
 const venueSponsors: PartnerLogosProps = [{ url: "https://apu.edu.my", src: "/APU.png" }];
 
@@ -57,7 +57,7 @@ export default function Partners() {
 				<div className='mb-8'>
 					<h3 className='text-lg md:text-xl mb-2'>Main Sponsors</h3>
 					<div className='border-b-2 w-full border-yellow-500 md:w-full mx-auto mb-4'></div>
-					{/* <PartnerLogos logos={mainSponsors} /> */}
+					<PartnerLogos logos={mainSponsors} />
 				</div>
 				<div className='mb-8'>
 					<h3 className='text-lg md:text-xl mb-2'>Venue Sponsor</h3>
