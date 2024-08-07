@@ -10,14 +10,9 @@ type Speaker = {
 //  list of speakers
 const speakers = [
 	{
-		imageSrc: "wenkang.jpeg",
-		name: "Wen Kang",
-		title: "Software Engineer",
-	},
-	{
-		imageSrc: "cheechyuan.jpeg",
-		name: "Chee Chyuan",
-		title: "Software Engineer",
+		imageSrc: "amiera-norazizan.jpeg",
+		name: "Amiera Norazizan",
+		title: "Community Executive",
 	},
 ];
 
@@ -62,14 +57,14 @@ export default function Speakers() {
 				time!
 			</p>
 			<div className='flex flex-wrap justify-start'>
-				{/* {speakers.map((speaker, index) => (
-          <SpeakerCard
-            key={index}
-            imageSrc={speaker.imageSrc}
-            name={speaker.name}
-            title={speaker.title}
-          />
-        ))} */}
+				{speakers.map((speaker, index) => (
+					<SpeakerCard
+						key={index}
+						imageSrc={speaker.imageSrc}
+						name={speaker.name}
+						title={speaker.title}
+					/>
+				))}
 			</div>
 		</div>
 	);
