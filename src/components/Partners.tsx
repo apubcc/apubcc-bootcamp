@@ -29,6 +29,22 @@ const supportedByLogos: PartnerLogosProps = [
 		mdHeight: "200px",
 		height: "200px",
 	},
+	{
+		url: "https://www.instagram.com/apu.aic/",
+		src: "apuaic.jpeg",
+	},
+	{
+		url: "https://www.instagram.com/itsocietymmu/",
+		src: "it.jpeg",
+	},
+	{
+		url: "https://www.instagram.com/uitmblockchainassociation/",
+		src: "utmuba.jpeg",
+	},
+	{
+		url: "https://www.instagram.com/cs.usm/",
+		src: "usmcs.jpeg",
+	},
 ];
 
 // modify the PartnerLogos to be able to be clicked and open a new tab with the sponsor's website. the website is to be received alongside the URL of image src.

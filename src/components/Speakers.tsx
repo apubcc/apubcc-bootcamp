@@ -11,7 +11,12 @@ type Speaker = {
 const speakers = [
 	{
 		imageSrc: "amiera-norazizan.jpeg",
-		name: "Amiera Norazizan",
+		name: "Amiera Norazizan, Future Lab",
+		title: "Community Executive",
+	},
+	{
+		imageSrc: "vienna.jpeg",
+		name: "vienna, Pagoda",
 		title: "Community Executive",
 	},
 ];
