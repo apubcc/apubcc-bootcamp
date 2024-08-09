@@ -19,6 +19,11 @@ const speakers = [
 		name: "vienna, Pagoda",
 		title: "Speaker",
 	},
+	{
+		imageSrc: "ryoma.jpg",
+		name: "Yuki aka Ryoma, Senspace",
+		title: "CTO",
+	},
 ];
 
 // SpeakerCard.tsx
