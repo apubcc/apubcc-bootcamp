@@ -14,11 +14,12 @@ const venueSponsors: PartnerLogosProps = [{ url: "https://apu.edu.my", src: "/AP
 const communityPartners: PartnerLogosProps = [
 	{ url: "https://www.myunilah.com/", src: "media_partner/unilah.png" },
 	{ url: "https://www.futurelab.my/", src: "futurelab.jpeg" },
+	{ url: "https://x.com/pagodasia", src: "pagoda.png" },
 ];
 
 const supportedByLogos: PartnerLogosProps = [
 	// { url: "https://apu-hackthletes.vercel.app/", src: "hackthletes.png"}
-	// { url: "https://solana.com", src: "solanaLogo.png" }, //Solana logo to be added once RTD approved
+
 	{
 		url: "https://sunwayblockchain.com/en",
 		src: "media_partner/sbcc.png",
