@@ -45,6 +45,14 @@ const supportedByLogos: PartnerLogosProps = [
 		url: "https://www.instagram.com/cs.usm/",
 		src: "usmcs.jpeg",
 	},
+	{
+		url: "https://www.instagram.com/gdsc.apu/",
+		src: "gdscapu.jpeg",
+	},
+	{
+		url: "https://www.instagram.com/taylorsblockchainclub/",
+		src: "taylorbcc.jpeg",
+	},
 ];
 
 // modify the PartnerLogos to be able to be clicked and open a new tab with the sponsor's website. the website is to be received alongside the URL of image src.
