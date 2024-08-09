@@ -16,7 +16,7 @@ const speakers = [
 	},
 	{
 		imageSrc: "vienna.jpeg",
-		name: "vienna, Pagoda",
+		name: "Vienna, Pagoda",
 		title: "Speaker",
 	},
 	{
