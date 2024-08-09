@@ -13,8 +13,13 @@ const venueSponsors: PartnerLogosProps = [{ url: "https://apu.edu.my", src: "/AP
 
 const communityPartners: PartnerLogosProps = [
 	{ url: "https://www.myunilah.com/", src: "media_partner/unilah.png" },
-	{ url: "https://www.futurelab.my/", src: "futurelab.jpeg" },
-	{ url: "https://x.com/pagodasia", src: "pagoda.png" },
+	{
+		url: "https://www.futurelab.my/",
+		src: "futurelab_horizontal.png",
+		mdHeight: "130px",
+		height: "100px",
+	},
+	{ url: "https://x.com/pagodasia", src: "pagoda_white.png" },
 ];
 
 const supportedByLogos: PartnerLogosProps = [
